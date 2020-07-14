@@ -1,0 +1,236 @@
+/*CSS DA PÁGINA*/
+
+/* NAVBAR */
+
+*  {
+  margin:0;
+  padding:0;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+html, body {
+  height:100%;
+  width:100%;
+  background-color: #CECEF6;
+}
+
+header{
+  height: 160px;
+  position: relative;
+}
+
+.logo img{
+  width: 140px;
+  margin-top: -20px;
+  margin-bottom: -20px;
+}
+
+.home{
+  background-color: #084B8A;
+  height: 60px;
+  margin-top: -10px;
+}
+
+.home li{
+  margin: 20px 20px;
+  font-weight: bold;
+  list-style-type: none;
+}
+.home a{ 
+  text-decoration: none;
+  color: #BDBDBD;
+  font-size: 14px;
+  transition-duration: 0.3s;
+}
+
+.menu{
+  display: flex;
+  margin-left: 20px;
+}
+
+.area{
+  transition-duration: 0.4s;
+  display: flex;
+  margin-left: 130px;
+}
+
+.area a{
+  text-decoration: underline;
+  margin-right: 30px;
+}
+
+.area .butto{
+  width: 90px;
+  height: 40px;
+  margin-top: 10px;
+  background-color: white;
+  transition-duration: 0.9s;
+  color: #084B8A;
+  border-radius: 29px;
+  border: 2px solid white;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+}
+
+.butto:hover{
+  border: 2px solid white;
+  background-color: #084B8A;
+  color: white;
+  font-weight: bold;
+  transition-duration: 0.6s;
+}
+
+.home a:hover{    
+  color: white;  
+  transition-duration: 0.3s;
+}
+
+/* FOOTER */
+
+footer{
+  width: 100%;
+  height: 220px;
+  background-color: #084B8A;
+  position: relative;
+  bottom: -20px;
+  display: flex;
+}
+
+footer div{
+  margin: 50px 115px ;
+  color: white;
+}
+
+.pagamentos h3{
+  width: 220px;
+  text-align: center;
+}
+
+.contatos h3{
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.seguro p{
+  width: 80px;
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+}
+
+/* Fale conosco */
+
+.fale{
+  position: fixed;
+  bottom: 37px;
+  right: 20px;
+  display: flex;
+  margin-right: -100px;
+  transition-duration: 0.9s;
+}
+
+.fl{
+  width: 40px;
+  height: 40px;
+  border-radius: 45%;
+  background: white url(img/faleconosco.png) 50% 50% no-repeat;
+  background-size: 40px;
+  cursor: pointer;
+}
+
+.fale:hover{
+  margin-right: 0;
+  transition-duration: 0.9s;
+}
+
+.fale:hover input{
+  opacity: 1;
+  transition-duration: 0.3s;
+}
+
+.fale:hover .fl{
+  width: 43px;
+  border-radius: 20px 0px 0px 20px;
+  transition-duration: 0.3s;
+}
+
+.fale input{
+  width: 100px;
+  height: 40px;
+  border-radius: 0px 20px 20px 0px;
+  border: 2px solid white;
+  background-color: white;
+  opacity: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+#cruzeiro{
+	display:flex;
+}
+	#filtro_de_pesquisa{
+		
+	width: 276px;
+	height: 1100px;
+	background-color: #2F4F4F;
+	margin-left: 20px;
+	margin-bottom:10px;
+	border:inset 1px;
+	border-radius:15px	
+}	
+
+#filtro_de_pesquisa form{
+		
+	margin: 15px;
+
+}
+#filtro_de_pesquisa h3{
+		
+	margin: 15px;
+
+}
+
+#Quadrado{
+	display:flex;
+	margin: 35px;
+	width: 1000px;
+	height: 250px;
+	background-color: #2F4F4F;
+	border:outset 1px;
+	border-radius:25px;
+}
+#Img{
+	width: 377px;
+	height: 250px;	
+}
+#Img img {
+	border-radius:25px 0px 0px 25px;
+	
+}
+#texto{
+	margin:5px;
+	padding:5px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: white;
+}
+#oferta{
+	text-align: center;
+	padding:5px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: white;
+	background-color:navy;
+	width: 295px;
+	height: 238px;
+	border-radius:0px 25px 25px 0px;
+	
+}
+
+#oferta button{
+	width: 100px;
+	height: 60px;
+	background-color:rgb(99,173,170);
+	border-radius:15px;
+	border: inset;
+}

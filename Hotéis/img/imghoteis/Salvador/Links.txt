@@ -1,0 +1,4 @@
+nome hotel: intercity salvador
+salvador hotel: https://pixabay.com/pt/photos/hotel-viagens-palmeira-de-luxo-1831072/
+salvador quarto:https://pixabay.com/pt/photos/hotel-quarto-de-h%C3%B3spedes-novo-1330841/
+salvador sala: https://pixabay.com/pt/photos/sala-de-jantar-sala-de-estar-moderna-3108037/

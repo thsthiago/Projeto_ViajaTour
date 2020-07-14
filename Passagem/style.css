@@ -1,0 +1,608 @@
+/*CSS DA PÁGINA*/
+
+/* NAVBAR */
+
+*  {
+  margin:0;
+  padding:0;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+html, body {
+  height:100%;
+  width:100%;
+  background-color: #CECEF6;
+}
+
+header{
+  height: 160px;
+  position: relative;
+}
+
+.logo img{
+  width: 140px;
+  margin-top: -20px;
+  margin-bottom: -20px;
+}
+
+.home{
+  background-color: #084B8A;
+  height: 60px;
+  margin-top: -10px;
+}
+
+.home li{
+  margin: 20px 20px;
+  font-weight: bold;
+  list-style-type: none;
+}
+.home a{ 
+  text-decoration: none;
+  color: #BDBDBD;
+  font-size: 14px;
+  transition-duration: 0.3s;
+}
+
+.menu{
+  display: flex;
+  margin-left: 20px;
+}
+
+.area{
+  transition-duration: 0.4s;
+  display: flex;
+  margin-left: 130px;
+}
+
+.area a{
+  text-decoration: underline;
+  margin-right: 30px;
+}
+
+.area .butto{
+  width: 90px;
+  height: 40px;
+  margin-top: 10px;
+  background-color: white;
+  transition-duration: 0.9s;
+  color: #084B8A;
+  border-radius: 29px;
+  border: 2px solid white;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+}
+
+.butto:hover{
+  border: 2px solid white;
+  background-color: #084B8A;
+  color: white;
+  font-weight: bold;
+  transition-duration: 0.6s;
+}
+
+.home a:hover{    
+  color: white;  
+  transition-duration: 0.3s;
+}
+
+/*simulador*/
+
+#simulador form{
+    border-radius: 25px;
+    background-image: url(img/banner2.jpg);
+    background-size: 1120px 280px;
+    width: 1100px;
+    height: 250px ;
+    margin: 0px auto ; 
+    margin-top: 40px;
+    box-shadow: 10px 10px -10px rgba(1, 1,0,0.9);
+    padding-top: 10px;
+    display: flex;
+    color: white;
+    font-weight: bold;
+}
+
+.titulo {
+    margin-top: 5px;
+    margin-left: 15px;
+    color: white;
+    position: absolute;
+}
+
+#tama{
+    margin-top: 5px;
+    width: 190px;
+    height: 45px;
+    border-radius: 11px;
+    border: 0;
+    outline: none;
+    padding: 0px 15px;
+    border: 3px solid #084B8A;
+}
+
+.menusuperior{
+  display: flex;
+  margin-top: 80px;
+  margin-left: 20px;
+  font: bold;
+  font-size: 19px;
+}
+
+.menusuperior input{
+  cursor: pointer;
+}
+
+#idaevolta{
+  padding-right: 6px;
+  padding-left: 0px;
+}
+
+#somenteida {
+  padding-right: 6px;
+  padding-left: 0px; 
+}
+
+#multidestinos {
+  padding-right: 6px;
+  padding-left: 0px;
+}
+
+#origem{
+    margin-top: 155px;
+    margin-left: -390px;
+}
+
+#destino{
+    margin-top: 155px;
+    margin-left: 20px; 
+}
+
+#data{
+    margin-top: 155px;
+    margin-left: 70px;
+    margin-right: 20px;
+}
+
+#data input{
+    margin-top: 5px;
+    width: 150px;
+    height: 45px;
+    border-radius: 11px;
+    border: 0;
+    outline: none;
+}
+
+#data input[type=date]{
+    text-align: center;
+    background: white url(img/calendar.png) 94% 50% no-repeat;
+    font-size: 15px;
+    border: 2px solid #084B8A;
+}
+
+#data input::-webkit-inner-spin-button {
+    display: none;
+}
+
+#data input::-webkit-calendar-picker-indicator{
+    width: 22px;
+    height: 22px;
+    opacity: 0;
+}
+
+#pessoas{
+    margin-top: 155px;
+}
+
+#pessoas input{
+    margin-top: 5px;
+    padding: 0px 20px;
+    width: 40px;
+    height: 45px;
+    border-radius: 10px;
+    border: 2px solid #084B8A; 
+    outline: none;
+}
+
+#pessoas input::-webkit-inner-spin-button {
+    height: 40px;
+    color: #084B8A;
+}
+
+#botao{
+    margin-top: 175px;
+    margin-left: 95px;
+}
+
+#botao input{
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    border: 0;
+    outline: none;
+    font-weight: bold;
+    background-color: #084B8A;
+    border: 5px solid #084B8A;
+    color: white;
+    cursor: pointer;
+}
+
+#botao input:hover{
+    transition-duration: 0.5s;
+    background-color: white;
+    border: 5px solid white;
+    color: black;
+}
+
+.margin{
+  margin: 40px 10px;
+  padding: 30px;
+  display: flex;
+  background-color: #045FB4;
+  border-radius: 30px 0px 30px 0px; 
+}
+
+.verpassagem input{
+  border-radius: 10px;
+  border: white;
+  background-color: #FFFF00;
+  color: navy;
+  font-weight: bold;
+  font-size: 15px;
+  width: 170px;
+  height: 35px;
+  font-weight: bold;
+  cursor: pointer;
+  align: center;
+  margin-left: 45px;
+}
+
+#internacionais{
+  background-image: url(img/paisagem.png);
+  background-size: cover;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#nacionais{
+  background-image: url(img/ferias.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+}
+
+.imgdubai{
+  height: 180px;
+  background: url(img/dubai.jpg) no-repeat;
+  border-radius: 30px 30px 0px 0px;
+  background-size: 320px 200px;
+  background-position: center;
+  transition-duration: 0.8s;
+  opacity: 0.9;
+}
+
+#dubai:hover .imgdubai{
+  background-size: 340px 220px;
+  transition-duration: 0.8s;
+  opacity: 1;
+}
+
+#dubai{
+  background: white;
+  border: 2px solid white;
+  margin: auto;
+  height: 350px;
+  width: 260px;
+  float: left;
+  border-radius: 30px 30px 30px 30px;
+}
+
+.imgparis{
+  height: 180px;
+  background: url(img/paris.jpg) no-repeat;
+  border-radius: 30px 30px 0px 0px;
+  background-size: 300px 180px;
+  background-position: center;
+  transition-duration: 0.8s;
+  opacity: 0.9;
+}
+
+#paris:hover .imgparis{
+  background-size: 320px 200px;
+  transition-duration: 0.8s;
+  opacity: 1;
+}
+
+#paris{
+  background: white;
+  border: 2px solid white;
+  margin: auto;
+  height: 350px;
+  width: 260px;
+  float: right;
+  border-radius: 30px 30px 30px 30px;
+}
+
+.imgnovayork{
+  height: 180px;
+  background: url(img/novayork.jpg) no-repeat;
+  border-radius: 30px 30px 0px 0px;
+  background-size: 300px 180px;
+  background-position: center;
+  transition-duration: 0.8s;
+  opacity: 0.9;
+}
+
+#novayork:hover .imgnovayork{
+  background-size: 320px 200px;
+  transition-duration: 0.8s;
+  opacity: 1;
+}
+
+#novayork{
+  background: white;
+  border: 2px solid white;
+  margin: auto;
+  height: 350px;
+  width: 260px;
+  float: right;
+  border-radius: 30px 30px 30px 30px;
+}
+
+.imglosangeles{
+  height: 180px;
+  background: url(img/losangeles.jpg) no-repeat;
+  border-radius: 30px 30px 0px 0px;
+  background-size: 300px 180px;
+  background-position: center;
+  transition-duration: 0.8s;
+  opacity: 0.9;
+}
+
+#losangeles:hover .imglosangeles{
+  background-size: 320px 200px;
+  transition-duration: 0.8s;
+  opacity: 1;
+}
+
+#losangeles{
+  background: white;
+  border: 2px solid white;
+  margin: auto;
+  height: 350px;
+  width: 260px;
+  float: right;
+  border-radius: 30px 30px 30px 30px;
+}
+
+.imgriodejaneiro{
+  height: 180px;
+  background: url(img/riodejaneiro.jpg) no-repeat;
+  border-radius: 30px 30px 0px 0px;
+  background-size: 300px 180px;
+  background-position: center;
+  transition-duration: 0.8s;
+  opacity: 0.9;
+}
+
+#riodejaneiro:hover .imgriodejaneiro{
+  background-size: 320px 200px;
+  transition-duration: 0.8s;
+  opacity: 1;
+}
+
+#riodejaneiro{
+  background: white;
+  border: 2px solid white;
+  margin: auto;
+  height: 350px;
+  width: 260px;
+  float: right;
+  border-radius: 30px 30px 30px 30px;
+}
+
+.imgfozdoiguacu{
+  height: 180px;
+  background: url(img/fozdoiguacu.jpg) no-repeat;
+  border-radius: 30px 30px 0px 0px;
+  background-size: 300px 180px;
+  background-position: center;
+  transition-duration: 0.8s;
+  opacity: 0.9;
+}
+
+#fozdoiguacu:hover .imgfozdoiguacu{
+  background-size: 320px 200px;
+  transition-duration: 0.8s;
+  opacity: 1;
+}
+
+#fozdoiguacu{
+  background: white;
+  border: 2px solid white;
+  margin: auto;
+  height: 350px;
+  width: 260px;
+  float: right;
+  border-radius: 30px 30px 30px 30px;
+}
+
+.imgsalvador{
+  height: 180px;
+  background: url(img/salvador.jpg) no-repeat;
+  border-radius: 30px 30px 0px 0px;
+  background-size: 300px 180px;
+  background-position: center;
+  transition-duration: 0.8s;
+  opacity: 0.9;
+}
+
+#salvador:hover .imgsalvador{
+  background-size: 320px 200px;
+  transition-duration: 0.8s;
+  opacity: 1;
+}
+
+#salvador{
+  background: white;
+  border: 2px solid white;
+  margin: auto;
+  height: 350px;
+  width: 260px;
+  float: right;
+  border-radius: 30px 30px 30px 30px;
+}
+
+.imgfortaleza{
+  height: 180px;
+  background: url(img/fortaleza.jpg) no-repeat;
+  border-radius: 30px 30px 0px 0px;
+  background-size: 300px 180px;
+  background-position: center;
+  transition-duration: 0.8s;
+  opacity: 0.9;
+}
+
+#fortaleza:hover .imgfortaleza{
+  background-size: 320px 200px;
+  transition-duration: 0.8s;
+  opacity: 1;
+}
+
+#fortaleza{
+  background: white;
+  border: 2px solid white;
+  margin: auto;
+  height: 350px;
+  width: 260px;
+  float: right;
+  border-radius: 30px 30px 30px 30px;
+}
+
+.titulosbanner{
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#apartir{
+  margin-left: 10px;
+}
+
+.preco{
+  font-size: 28px;
+  margin-left: 10px;
+  font-weight: bold;
+  color: #0404B4;
+}
+
+.titulos{
+  margin: auto;
+  height: auto;
+  width: auto;
+  font-size: 40px;
+  font-weight:  bold;
+  text-decoration: underline;
+  color: #084B8A;
+  text-align: center;
+}
+
+#passinter{
+  margin-top: 40px;
+}
+
+
+/* FOOTER */
+
+footer{
+  width: 100%;
+  height: 220px;
+  background-color: #084B8A;
+  position: relative;
+  bottom: 0px;
+  display: flex;
+}
+
+footer div{
+  margin: 50px 115px ;
+  color: white;
+}
+
+.pagamentos h3{
+  width: 220px;
+  text-align: center;
+}
+
+.pag{
+display: flex;
+margin-top: 10px;
+margin-left: 20px;
+}
+
+.pag img{
+margin: 10px;
+width: 40px;
+}
+
+.contatos h3{
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.seguro p{
+  width: 80px;
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+}
+
+/* Fale conosco */
+
+.fale{
+  position: fixed;
+  bottom: 37px;
+  right: 20px;
+  display: flex;
+  margin-right: -100px;
+  transition-duration: 0.9s;
+}
+
+.fl{
+  width: 40px;
+  height: 40px;
+  border-radius: 45%;
+  background: white url(img/faleconosco.png) 50% 50% no-repeat;
+  background-size: 40px;
+  cursor: pointer;
+}
+
+.fale:hover{
+  margin-right: 0;
+  transition-duration: 0.9s;
+}
+
+.fale:hover input{
+  opacity: 1;
+  transition-duration: 0.3s;
+}
+
+.fale:hover .fl{
+  width: 43px;
+  border-radius: 20px 0px 0px 20px;
+  transition-duration: 0.3s;
+}
+
+.fale input{
+  width: 100px;
+  height: 40px;
+  border-radius: 0px 20px 20px 0px;
+  border: 2px solid white;
+  background-color: white;
+  opacity: 0;
+  outline: none;
+  cursor: pointer;
+}

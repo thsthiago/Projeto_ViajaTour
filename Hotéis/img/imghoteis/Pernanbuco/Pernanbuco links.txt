@@ -1,0 +1,5 @@
+nome hotel: estação do sol
+pernanbuco hotel: https://pixabay.com/pt/photos/hotel-apartamentos-tur%C3%ADstico-1209021/
+pernanbuco sala: https://pixabay.com/pt/photos/sof%C3%A1-mob%C3%ADlias-dentro-de-casa-1835923/
+pernanbuco piscina: https://pixabay.com/pt/photos/piscina-palmeiras-hotel-tabelas-2128578/
+pernanbuco quarto: https://pixabay.com/pt/photos/interior-hotel-renderiza%C3%A7%C3%A3o-1026452/

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Passagem</title>
+        <link rel="stylesheet"  type="text/css" href="style.css">
+    </head>
+
+    <body>
+        <div class="pagina">
+          <header>
+            <div class="logo">
+              <a href="#"><img src="img/logoviajatour.png"></a>
+            </div><!--Logo-->
+            <nav class="home">  
+              <ul class="menu">
+                <li><a href="">Passagens</a></li>
+                <li><a href="">Hotéis</a></li>
+                <li><a href="">Cruzeiros</a></li>
+                <li><a href="">Aluguel de Carros</a></li>
+                <li><a href="">Pacotes de Viagens</a></li>
+                <li><a href="">Dicas de Vigens</a></li>
+                  <div class="area">
+                    <li><a href="">Faça o seu cadastro</a></li>
+                     <button class="butto" href="login">Login</button>
+                    </div><!--Area administrativa-->
+              </ul><!--menu-->
+            </nav><!--home-->
+          </header><!--cabecalho-->
+
+          <div id="simulador">
+            <form>          
+              <h1 class="titulo">Encontre o voo ideal para sua viagem!</h1>
+              <!--Menu para escolher se a passagem é ida e volta, etc-->    
+              <div class="menusuperior"> 
+                <div id="idaevolta">
+                  <input type="radio" name="opcao1" value="idaevolta"> Ida e volta               
+                </div>
+                <div id="somenteida">                  
+                  <input type="radio" name="opcao1" value="somenteida"> Somente Ida
+                </div>
+                <div id="multidestinos">                        
+                  <input type="radio" name="opcao1" value="multidestinos">Multidestinos
+                </div> 
+              </div>  
+              <!--Menu do simulador-->
+              <div id="origem">
+                <label>Origem</label> <br>
+                <input placeholder="Local de saída" type="text" id="tama" required> 
+              </div>
+                        
+              <div id="destino">
+                <label></label>Destino</label> <br>
+                <input placeholder="Para onde deseja ir" type="text" id="tama" required> 
+              </div>
+            
+              <div id="data">
+                <label class="font">Data</label> <br>
+                <input type="date" required>  
+              </div>
+
+              <div id="pessoas">
+                <label for="quantidade"><font color="navy"> Pessoas</font></label>
+                <br>
+                <input type="number" min="1" max="8" for="quantidade" required>
+              </div>
+            
+              <div id="botao">
+                <input type="submit" value="Procurar Passagens">
+              </div>
+                    
+            </form>
+          </div>
+
+        <div id="conteudo">
+
+          <div class="titulos"> 
+             <div id="passinter">Passagens Internacionais </div>
+          </div>
+
+          <div class="margin" id="internacionais">
+            
+            <div id="dubai">
+              <div class="imgdubai"></div>
+              <p class="titulosbanner">Dubai</p>
+              <p id="apartir">A partir de</p>
+              <p class="preco">R$ 15.340,00</p>
+              <p id="apartir">+Taxas | Pague Parcelado</p><br>
+              <div  class="verpassagem">
+                <input type="submit" value="Ver Passagem">
+              </div>  
+            </div>
+
+            <div id="paris">
+              <div class="imgparis"></div>
+              <p class="titulosbanner">Paris</p>
+              <p id="apartir">A partir de</p>
+              <p class="preco">R$ 12.700,00</p>
+              <p id="apartir">+Taxas | Pague Parcelado</p><br>
+              <div  class="verpassagem">
+                <input type="submit" value="Ver Passagem">
+              </div> 
+            </div>
+
+            <div id="novayork">
+              <div class="imgnovayork"></div>
+              <p class="titulosbanner">Nova York</p>
+              <p id="apartir">A partir de</p>
+              <p class="preco">R$ 10.600,00</p>
+              <p id="apartir">+Taxas | Pague Parcelado</p><br>
+              <div  class="verpassagem">
+                <input type="submit" value="Ver Passagem">
+              </div> 
+            </div>
+
+            <div id="losangeles">
+              <div class="imglosangeles"></div>
+              <p class="titulosbanner">Los Angeles</p>
+              <p id="apartir">A partir de</p>
+              <p class="preco">R$ 11.750,00</p>
+              <p id="apartir">+Taxas | Pague Parcelado</p><br>
+              <div  class="verpassagem">
+                <input type="submit" value="Ver Passagem">
+              </div> 
+            </div>
+              
+          </div> 
+
+            <div class="titulos"> 
+             <div id="ofertas">Ofertas exclusivas com os melhores preços! </div>
+            </div>
+            
+          <div class="margin" id="nacionais" >
+              
+            <div id="riodejaneiro"> 
+              <div class="imgriodejaneiro"></div>
+              <p class="titulosbanner">Rio de Janeiro-RJ</p>
+              <p id="apartir">A partir de</p>
+              <p class="preco">R$ 277,00</p>
+              <p id="apartir">+Taxas | Pague Parcelado</p><br>
+              <div  class="verpassagem">
+                <input type="submit" value="Ver Passagem">
+              </div> 
+            </div>
+
+            <div id="fozdoiguacu">
+              <div class="imgfozdoiguacu"></div>
+              <p class="titulosbanner">Foz do Iguaçu-PR</p>
+              <p id="apartir">A partir de</p>
+              <p class="preco">R$ 650,00</p>
+              <p id="apartir">+Taxas | Pague Parcelado</p><br>
+              <div  class="verpassagem">
+                <input type="submit" value="Ver Passagem">
+              </div> 
+            </div>  
+
+            <div id="salvador">
+              <div class="imgsalvador"></div>
+              <p class="titulosbanner">Salvador-BA</p>
+              <p id="apartir">A partir de</p>
+              <p class="preco">R$ 449,00</p>
+              <p id="apartir">+Taxas | Pague Parcelado</p><br>
+              <div  class="verpassagem">
+                <input type="submit" value="Ver Passagem">
+              </div> 
+            </div>  
+
+            <div id="fortaleza">
+              <div class="imgfortaleza"></div>
+              <p class="titulosbanner">Fortaleza-CE</p>
+              <p id="apartir">A partir de</p>
+              <p class="preco">R$ 590,00</p>
+              <p id="apartir">+Taxas | Pague Parcelado</p><br>
+              <div  class="verpassagem">
+                <input type="submit" value="Ver Passagem">
+              </div> 
+            </div>  
+              
+          </div>
+          <footer>
+              <div class="pagamentos">
+                  <h3>Formas de pagamento</h3>
+                  <div class="pag">
+                      <img src="img/pagamentos/mastercard.png">
+                      <img src="img/pagamentos/visa.png">
+                      <img src="img/pagamentos/elo.png">
+                  </div>
+              </div>
+              
+              <div class="contatos">
+                  <h3>Contatos</h3>
+                  <p>viajatour@empresa.com</p>
+                  <p>2222-2222</p>
+              </div>
+              <div class="seguro">
+                  <p>Site seguro</p>
+              </div>
+          </footer>
+          
+          <div class="fale">
+              <div class="fl" href="#">
+              </div>
+              <input type="submit" value="Fale conosco" href="">
+          </div>
+        </div>
+  </body>
+
+</html>

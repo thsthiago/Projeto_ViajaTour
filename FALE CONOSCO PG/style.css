@@ -1,0 +1,249 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+  height:100%;
+  width:100%;
+  background-color: #CECEF6;
+}
+
+header{
+  height: 160px;
+  position: relative;
+}
+
+.home{
+  background-color: #084B8A;
+  height: 60px;
+  margin-top: -10px;
+}
+
+.home li{
+  margin: 20px 20px;
+  font-weight: bold;
+  list-style-type: none;
+}
+.home a{ 
+  text-decoration: none;
+  color: #BDBDBD;
+  font-size: 14px;
+  transition-duration: 0.3s;
+}
+
+.home a:hover{    
+  color: white;  
+  transition-duration: 0.3s;
+}
+
+.menu{
+  display: flex;
+  margin-left: 20px;
+}
+
+.area{
+  transition-duration: 0.4s;
+  display: flex;
+  margin-left: 130px;
+}
+
+.area a{
+  text-decoration: underline;
+  margin-right: 30px;
+}
+
+.area .butto{
+  width: 90px;
+  height: 40px;
+  margin-top: 10px;
+  background-color: white;
+  transition-duration: 0.9s;
+  color: #084B8A;
+  border-radius: 29px;
+  border: 2px solid white;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+}
+
+.butto:hover{
+  border: 2px solid white;
+  background-color: #084B8A;
+  color: white;
+  font-weight: bold;
+  transition-duration: 0.6s;
+}
+
+
+
+.logohome img{
+  width: 140px;
+  margin-top: -20px;
+  margin-bottom: -20px;
+}
+
+
+
+/* FOOTER */
+
+footer{
+  width: 100%;
+  height: 220px;
+  background-color: #084B8A;
+  /*position: absolute;*/
+  bottom: 0px;
+  display: flex;
+}
+
+footer div{
+  margin: 50px 115px ;
+  color: white;
+}
+
+.pagamentos h3{
+  width: 220px;
+  text-align: center;
+}
+
+.pag{
+display: flex;
+margin-top: 10px;
+margin-left: 20px;
+}
+
+.pag img{
+margin: 10px;
+width: 40px;
+}
+
+.contatos h3{
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.seguro p{
+  width: 80px;
+  /*position: absolute;*/
+  right: 15px;
+  bottom: 15px;
+  margin-top: 120px;
+  margin-left: 180px;
+}
+
+/* Fale conosco */
+
+.fale{
+  position: fixed;
+  bottom: 37px;
+  right: 20px;
+  display: flex;
+  margin-right: -360px;
+  transition-duration: 0.9s;
+  
+}
+
+.fl{
+  width: 40px;
+  height: 40px;
+  border-radius: 45%;
+  background: white url(img/faleconosco.png) 50% 50% no-repeat;
+  background-size: 40px;
+  cursor: pointer;
+}
+
+.fale:hover{
+  margin-right: 0;
+  transition-duration: 0.9s;
+}
+
+.fale:hover input{
+  opacity: 1;
+  transition-duration: 0.3s;
+}
+
+.fale:hover .fl{
+  width: 43px;
+  border-radius: 20px 0px 0px 20px;
+  transition-duration: 0.3s;
+}
+
+.fale input{
+  width: 100px;
+  height: 40px;
+  border-radius: 0px 20px 20px 0px;
+  border: 2px solid white;
+  background-color: white;
+  opacity: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+
+
+
+
+/*FALE CONOSCO*/
+.hfale {
+  margin-left: 50px;
+}
+
+.hfale {
+  margin-left: 50px;
+}
+
+/*body {
+  background-color: rgb(241, 241, 241);
+}*/
+
+#principal {
+ 
+  width: 1100px;
+  height: 900px;
+  margin: 0px auto;    
+  background-color: white;
+}
+
+#lateral {
+  
+  height: 775px;
+  width: 600px;
+  }
+
+input {
+      padding: 10px 150px;
+     margin-left: 50px;
+     
+     
+     }   
+
+  #msg {
+      padding: 40px 150px ;
+     
+      
+  }
+
+  label {
+      margin-left: 50px;
+  }
+
+  .buttonfale{
+      margin-left: 50px;
+      padding: 10px 40px;
+      background-color: rgb(4, 4, 161);
+      color: white;
+  }
+
+  #sac{
+      height: 300px;
+      width: 700px;
+      margin-left: 650px;
+      margin-top: -400px;
+  }
+
+  .ss {
+      margin-left: 0px;
+  }
+
+

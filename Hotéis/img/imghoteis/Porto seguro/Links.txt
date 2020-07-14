@@ -1,0 +1,4 @@
+nome hotel: vila miola
+piscina: https://www.pexels.com/pt-br/foto/agua-descanso-diversao-estancia-261156/
+quarto: https://pixabay.com/pt/photos/quarto-cama-parede-decora%C3%A7%C3%A3o-416063/
+sala: https://pixabay.com/pt/photos/cozinha-sala-de-estar-4043091/

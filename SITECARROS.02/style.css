@@ -1,0 +1,461 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  html, body {
+    height:100%;
+    width:100%;
+    /* background-color: #CECEF6; */
+    background-color: white;
+  }
+  
+  header{
+    height: 160px;
+    position: relative;
+  }
+  
+  .home{
+    background-color: #084B8A;
+    height: 60px;
+    margin-top: -10px;
+  }
+  
+  .home li{
+    margin: 20px 20px;
+    font-weight: bold;
+    list-style-type: none;
+  }
+  .home a{ 
+    text-decoration: none;
+    color: #BDBDBD;
+    font-size: 14px;
+    transition-duration: 0.3s;
+  }
+  
+  .home a:hover{    
+    color: white;  
+    transition-duration: 0.3s;
+  }
+  
+  .menu{
+    display: flex;
+    margin-left: 20px;
+  }
+  
+  .area{
+    transition-duration: 0.4s;
+    display: flex;
+    margin-left: 130px;
+  }
+  
+  .area a{
+    text-decoration: underline;
+    margin-right: 30px;
+  }
+  
+  .area .butto{
+    width: 90px;
+    height: 40px;
+    margin-top: 10px;
+    background-color: white;
+    transition-duration: 0.9s;
+    color: #084B8A;
+    border-radius: 29px;
+    border: 2px solid white;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .butto:hover{
+    border: 2px solid white;
+    background-color: #084B8A;
+    color: white;
+    font-weight: bold;
+    transition-duration: 0.6s;
+  }
+  
+  
+  
+ .logohome img{
+    width: 140px;
+    margin-top: -20px;
+    margin-bottom: -20px;
+  }
+  
+  
+  
+  /* FOOTER */
+  
+  footer{
+    width: 100%;
+    height: 220px;
+    background-color: #084B8A;
+    position: relative;
+    bottom: 0px;
+    display: flex;
+}
+
+footer div{
+margin: 50px 90px ;
+color: white;
+}
+
+.pagamentos h3{
+width: 220px;
+text-align: center;
+}
+
+.pag{
+display: flex;
+margin-top: 10px;
+margin-left: 20px;
+}
+
+.pag img{
+margin: 10px;
+width: 40px;
+}
+
+.contatos h3{
+text-align: center;
+margin-bottom: 15px;
+}
+
+.contact{
+display: flex;
+width: 15px;
+margin-top: 20px;
+margin-left: 10px;
+margin-bottom: 0px;
+}
+
+.contact img{
+width: 15px;
+margin-right: 7px;
+}
+
+.tele{
+display: flex;
+height: 15px;
+margin-top: 10px;
+margin-left: 10px;
+
+}
+
+.tele img{
+width: 15px;
+margin-top: 3px;
+margin-right: 5px;
+}
+
+.seguro{
+display: flex;
+height: 20px;
+margin: 0px;
+position: absolute;
+right: 10px;
+bottom: 20px;
+}
+
+.seguro p{
+margin-right: 5px;
+}
+
+.seguro img{
+width: 20px;
+height: 20px;
+}
+  
+  /* Fale conosco */
+  
+  .fale{
+    position: fixed;
+    bottom: 37px;
+    right: 20px;
+    display: flex;
+    margin-right: -100px;
+    transition-duration: 0.9s;
+  }
+  
+  .fl{
+    width: 40px;
+    height: 40px;
+    border-radius: 45%;
+    background: white url(img/faleconosco.png) 50% 50% no-repeat;
+    background-size: 40px;
+    cursor: pointer;
+  }
+  
+  .fale:hover{
+    margin-right: 0;
+    transition-duration: 0.9s;
+  }
+  
+  .fale:hover input{
+    opacity: 1;
+    transition-duration: 0.3s;
+  }
+  
+  .fale:hover .fl{
+    width: 43px;
+    border-radius: 20px 0px 0px 20px;
+    transition-duration: 0.3s;
+  }
+  
+  .fale input{
+    width: 100px;
+    height: 40px;
+    border-radius: 0px 20px 20px 0px;
+    border: 2px solid white;
+    background-color: white;
+    opacity: 0;
+    outline: none;
+    cursor: pointer;
+  }
+
+  /*=-=-=-=-=-=-=-=-=-=-SIMULADOR=-=-=-=-=-=-=-=-=-=-*/
+
+  input{
+    outline:none;
+  }
+
+  .bor{
+    border : 1px solid #084B8A;/*alterar border para cor preta para visualizar divição das divs*/
+    border-radius: 25px; 
+
+  }
+   #h1sim {
+    font-size: 30px;
+    color:white;
+    margin-left: 40px;
+    margin-top: 30px;
+   }
+
+   
+    #titulo{
+      height: 140px;
+      width: 1198px;
+  }
+
+  #principal {
+    border : 1px solid  rgb(10, 181, 175);
+    /* background-color :white; */
+    height : 280px ;
+    background-image: url(img/fundo1.jpg);
+   
+}
+
+#central {
+    border-radius: 15px  ;
+    background-color :#084B8A;
+    width: 1200px;
+    height : 260px ;
+    margin : 0px auto ; 
+    margin-top: 10px;
+    
+   }
+
+   #central1 {
+    border-radius: 15px  ;
+    /* background-color :#084B8A; */
+    width: 1200px;
+    height : 260px ;
+    margin : 0px auto ; 
+    margin-top: 10px;
+    background-color: white;/*alterado */
+   }
+
+   #local{ /*div*/
+    height: 80px;
+    width: 380px;
+    margin-top: -10px;
+    
+   }
+
+    #local2 {
+        padding: 12px 100px;
+        margin-right: 25px ;
+        border-radius: 25px;
+      
+       }   
+
+     #retirada { /*div*/
+         margin-left: 382px;
+         height: 80px;
+         width: 310px;
+         margin-top: -82px;
+        }
+    
+    .retirada2{
+        padding: 10px 20px;
+        border-radius: 25px;
+      }
+
+      #data1::-webkit-inner-spin-button {
+        display: none;}
+
+        #data1::-webkit-calendar-picker-indicator{
+         opacity: 0;}
+
+       #data1{
+       background: white url(img/calendar.png) 84% 50% no-repeat;
+      }
+   
+        #devolucao { /*div*/
+            margin-left: 698px;
+            height: 80px;
+            width: 310px;
+            margin-top: -82px;
+             }
+   
+        .devolucao2 {
+           padding: 10px 20px;
+           border-radius: 25px;
+           }
+
+           #data2::-webkit-inner-spin-button {
+            display: none;}
+    
+            #data2::-webkit-calendar-picker-indicator{
+             opacity: 0;}
+    
+           #data2{
+           background: white url(img/calendar.png) 84% 50% no-repeat;
+          }
+      
+
+        #button{ /*div*/
+            margin-left: 1006px;
+            margin-top: -88px;
+            height: 80px;
+            width: 193px;
+        }
+
+        #button1  {
+                font-size: 15px;
+                color: #084B8A;
+                padding: 15px 30px;
+                border-radius: 25px;
+                margin-top: 20px;
+                margin-left:40px ;
+                outline:none;/*Adiciona para tirar borda do botão*/
+               }
+
+        #button1:hover { /*efeito*/
+            background-color: #084B8A;
+             border: 2px solid white;
+             color: white;
+            
+        
+        }
+
+        #checkdevolve{ /*div*/
+            height: 34px;
+            width: 1198px;
+            
+           }
+
+        #defini{
+            margin-left: 130px;
+        }
+
+      .font{ 
+            font-size: 20px;
+            color: white;
+            font-style: normal;
+            margin-left: 10px;
+        }
+            /*Conteudo carros*/
+
+            #titulocar{
+                width: 200px;
+                height: 40px;
+                margin-left: 20px;
+                margin-top: 5px;
+                text-align: center;
+                
+            }
+
+            #carro1, #carro2, #carro3, #carro4, #carro5, #carro6{
+                width: 200px;
+                height: 200px;
+                margin-left: 20px;
+                margin-top: 5px;
+                border-radius: 25px;
+                background-image: url(img/bmw3.jpg);
+            }
+
+            #carro2{
+                background-image: url(img/mercedes1.jpg);
+            }
+            #carro3{
+                background-image: url(img/audi1.jpg);
+            }
+            #carro4{
+                background-image: url(img/lamborghini1.jpg);
+            }
+            #carro5{
+                background-image: url(img/mclaren1.jpg);
+            }
+            #carro6{
+                background-image: url(img/porsche1.jpg);
+            }
+
+            /*.divcar{
+                /*border: 1px solid black;
+            }*/
+
+            #but1{
+                margin-top: 30px;
+                margin-left: 1000px;
+
+            }
+
+            #conteudo1{
+                width: 300px;
+                height: 200px;
+                margin-left: 245px;
+                 margin-top: -202px;
+            }
+
+            #conteudo2{
+                width: 300px;
+                height: 200px;
+                margin-left: 570px;
+                margin-top: -202px;
+            }
+
+            #conteudo3{
+                width: 300px;
+                height: 200px;
+                margin-left: 895px;
+                margin-top: -202px;
+                text-align: right;
+            }
+
+            p{
+                font-weight: bold;
+                color: #CECEF6;
+            }
+
+            .texcar, li{
+                
+                /* color: #CECEF6; */
+                color: black;
+            }
+            
+            input{
+                padding: 10px 30px;  
+                border-radius: 25px;
+                
+            }
+
+            .buttonoferta{
+              color:white;
+              background-color: #084B8A;
+            }
+
+           

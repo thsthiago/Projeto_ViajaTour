@@ -1,0 +1,4 @@
+nome hotel: atlantico sul
+rio de janeiro hotel: https://pixabay.com/pt/photos/piscina-oceano-design-moderno-1031245/
+quarto: https://pixabay.com/pt/photos/hotel-quartos-cortina-verde-1979406/
+sala: https://pixabay.com/pt/photos/sala-de-jantar-sala-de-estar-1158266/

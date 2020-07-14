@@ -1,0 +1,814 @@
+/*CSS DA PÁGINA*/
+
+/* NAVBAR */
+
+*  {
+    margin:0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+html, body {
+    height:100%;
+    width:100%;
+    background-color: #CECEF6;
+}
+
+header{
+    height: 160px;
+    position: relative;
+}
+
+.logo img{
+    width: 140px;
+    margin-top: -20px;
+    margin-bottom: -20px;
+}
+
+.home{
+    background-color: #084B8A;
+    height: 60px;
+    margin-top: -10px;
+}
+
+.home li{
+    margin: 20px 20px;
+    font-weight: bold;
+    list-style-type: none;
+}
+.home a{ 
+    text-decoration: none;
+    color: #BDBDBD;
+    font-size: 14px;
+    transition-duration: 0.3s;
+}
+
+.menu{
+    display: flex;
+    margin-left: 20px;
+}
+
+.area{
+    transition-duration: 0.4s;
+    display: flex;
+    margin-left: 130px;
+}
+
+.area a{
+    text-decoration: underline;
+    margin-right: 30px;
+}
+
+.area .butto{
+    width: 90px;
+    height: 40px;
+    margin-top: 10px;
+    background-color: white;
+    transition-duration: 0.9s;
+    color: #084B8A;
+    border-radius: 29px;
+    border: 2px solid white;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+}
+
+.butto:hover{
+    border: 2px solid white;
+    background-color: #084B8A;
+    color: white;
+    font-weight: bold;
+    transition-duration: 0.6s;
+}
+
+.home a:hover{    
+    color: white;  
+    transition-duration: 0.3s;
+}
+
+/* SIMULADOR */
+
+#simulador form{
+    border-radius: 25px;
+    background-image: url(img/banner.jpg);
+    background-size: 1120px 190px;
+    width: 1100px;
+    height: 180px ;
+    margin: 0px auto ; 
+    margin-top: 40px;
+    box-shadow: 10px 10px -10px rgba(1, 1,0,0.9);
+    padding-top: 10px;
+    display: flex;
+    color: white;
+    font-weight: bold;
+}
+
+.titulo {
+    margin-top: 5px;
+    margin-left: 15px;
+    color: white;
+    position: absolute;
+}
+
+#tama{
+    margin-top: 5px;
+    width: 190px;
+    height: 45px;
+    border-radius: 11px;
+    border: 0;
+    outline: none;
+    padding: 0px 15px;
+    border: 3px solid #084B8A;
+}
+
+#origem{
+    margin-top: 85px;
+    margin-left: 20px;
+}
+
+#destino{
+    margin-top: 85px;
+    margin-left: 20px; 
+}
+
+#data{
+    margin-top: 85px;
+    margin-left: 70px;
+    margin-right: 20px;
+}
+
+#data input{
+    margin-top: 5px;
+    width: 150px;
+    height: 45px;
+    border-radius: 11px;
+    border: 0;
+    outline: none;
+}
+
+#data input[type=date]{
+    text-align: center;
+    background: white url(img/calendar.png) 94% 50% no-repeat;
+    font-size: 15px;
+    border: 2px solid #084B8A;
+}
+
+#data input::-webkit-inner-spin-button {
+    display: none;
+}
+
+#data input::-webkit-calendar-picker-indicator{
+    width: 22px;
+    height: 22px;
+    opacity: 0;
+}
+
+#pessoas{
+    margin-top: 85px;
+}
+
+#pessoas input{
+    margin-top: 5px;
+    padding: 0px 20px;
+    width: 40px;
+    height: 45px;
+    border-radius: 10px;
+    border: 2px solid #084B8A; 
+    outline: none;
+}
+
+#pessoas input::-webkit-inner-spin-button {
+    height: 40px;
+    color: #084B8A;
+}
+
+#botao{
+    margin-top: 110px;
+    margin-left: 95px;
+}
+
+#botao input{
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    border: 0;
+    outline: none;
+    font-weight: bold;
+    background-color: #084B8A;
+    border: 5px solid #084B8A;
+    color: white;
+}
+
+#botao input:hover{
+    transition-duration: 0.5s;
+    background-color: white;
+    border: 5px solid white;
+    color: black;
+}
+          
+/*------------------ 
+--Area de conteudo -
+--------------------
+*/
+
+.margin{
+    margin: 40px 10px;
+}
+
+/* PASSAGENS */
+
+#passagens{
+    height: 420px;
+    display: flex;
+    background-color: royalblue;
+    border-radius: 30px 0px 30px 0px;
+}
+
+.pelement{
+    width: 260px;
+    height: 350px;
+    margin: 23px;
+    border-radius: 15px;
+    background-color: white;
+    border: 2px solid white;
+}
+
+.pelement:hover{
+    box-shadow: 0px 0px 5px 5px rgba(1, 1,0,0.1);
+}
+
+.imgss{
+    border-radius: 15px 15px 0px 0px;
+    background: url(img/passagens/p1.jpeg) no-repeat;
+    background-size: 270px;
+    width: 260px;
+    height: 180px;
+    background-position: center;
+    transition-duration: 0.9s;
+    opacity: 0.8;
+}
+
+.imgss1{
+    border-radius: 15px 15px 0px 0px;
+    background: url(img/passagens/p2.jpeg) no-repeat;
+    background-size: 305px;
+    width: 260px;
+    height: 180px;
+    background-position: center;
+    transition-duration: 0.9s;
+    opacity: 0.8;
+}
+
+.imgss2{
+    border-radius: 15px 15px 0px 0px;
+    background: url(img/passagens/p3.jpeg) no-repeat;
+    background-size: 270px;
+    width: 260px;
+    height: 180px;
+    background-position: center;
+    transition-duration: 0.9s;
+    opacity: 0.8;
+}
+
+.imgss3{
+    border-radius: 15px 15px 0px 0px;
+    background: url(img/passagens/p3.jpeg) no-repeat;
+    background-size: 270px;
+    width: 260px;
+    height: 180px;
+    background-position: center;
+    transition-duration: 0.9s;
+    opacity: 0.8;
+}
+
+.pelement:hover .imgss{
+    background-size: 300px;
+    transition-duration: 0.9s;
+    opacity: 1;
+}
+
+.pelement:hover .imgss1{
+    background-size: 350px;
+    transition-duration: 0.9s;
+    opacity: 1;
+}
+
+.pelement:hover .imgss2{
+    background-size: 300px;
+    transition-duration: 0.9s;
+    opacity: 1;
+}
+
+.pelement:hover .imgss3{
+    background-size: 300px;
+    transition-duration: 0.9s;
+    opacity: 1;
+}
+
+.titus{
+    margin: 10px 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.pelement p{
+    margin-left: 10px;    
+}
+
+.cont{
+    margin-top: 5px;
+    display: flex;
+}
+
+.cont h4{
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+.pelement button{
+    width: 100px;
+    height: 30px;
+    margin: 15px 75px;
+    border-radius: 5px;
+    color: white;
+    background-color: black;
+    opacity: 0.7;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.pelement button:hover{
+    opacity: 0.8;
+}
+
+
+/* EDITAR O CSS DA AREA DE PACOTES NESTE LOCAL */
+
+#pacotes{
+    height: 420px;
+    display: flex;
+    background-image: url("https://cdn.pixabay.com/photo/2016/08/11/23/48/italy-1587287_960_720.jpg");
+    background-size: 1300px 900px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    border-radius: 30px 0px 30px 0px;
+}
+
+#pacotes h1{
+    font-size: 60px;
+    color: white;
+    margin: 30px 25px;
+    text-shadow: 2px 5px 5px black;
+}
+
+.element{
+    width: 400px;
+    height: 290px;
+    background-color: white;
+    margin: 20px 20px;
+    transition-duration: 0.6s;
+}
+
+.imgs2{ 
+    width: 250px;
+    height: 150px;
+}
+
+.titu{
+    margin: 5px 10px 4px 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.element p{
+    margin-left: 10px;
+}
+
+.valor{
+    display: flex;
+    margin-top: 5px;
+}
+
+.valor h4{
+    font-size: 30px;
+    margin-left: 5px;
+    margin-bottom: -7px;
+}
+
+.test2{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: -80px;
+    opacity: 0;
+    transition-duration: 0.6s;
+}
+
+.buttons1{
+    margin: 10px 75px;
+    width: 100px;
+    height: 30px;
+    outline: none;
+    cursor: pointer;
+}
+
+.buttons1:hover{
+    background-color: black;
+    color: white;
+    opacity: 0.7;
+}
+
+.element:hover .test2{
+    margin-top: 0;
+    margin-bottom: 5px;
+    opacity: 1;
+    transition-duration: 0.6s;
+    transition-delay: 0.2s;
+}
+
+.element:hover .buttons1{
+    margin: 10px 75px;
+    width: 100px;
+    height: 30px;
+}
+.element:hover{
+    height: 380px;
+    transition-duration: 0.6s;
+    transition-delay: 0.2s;
+}
+
+.buttons1:hover{
+    border: 1px solid black;
+}
+
+/* EDITAR O CSS DA AREA DE HOTEIS NESTE LOCAL */
+
+#hoteis{
+    height: 250px;
+    display: flex;
+    background-color: royalblue;
+    border-radius: 30px 0px 30px 0px;
+}
+
+.element3{
+    width: 390px;
+    height: 190px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    margin: 20px 12px;
+    transition-duration: 0.5s;
+}
+
+.element3 img{
+    width: 250px;
+    border-radius: 10px 0px 0px 10px;
+    transition-duration: 0.9s;
+}
+
+.element3:hover img{
+    width: 200px;
+    transition-duration: 0.9s;
+}
+
+.element3 h3{
+    margin: 20px 5px;
+}
+
+.desc{
+    margin-left: 10px;
+}   
+
+.desc button{
+    width: 100px;
+    height: 30px;
+    margin: 30px 10px;
+    transition-duration: 0.9s;
+    color: white;
+    background-color: black;
+    opacity: 0.6;
+    border: 2px  solid black;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.desc button:hover{
+    opacity: 0.8;
+    transition: none;
+}
+
+.element3:hover button{
+    margin-left: 35px;
+    transition-duration: 0.9s;
+}
+
+.de{
+    font-weight: bold;
+}
+
+.desc2{
+    margin: 4px 4px 4px -60px;
+    opacity: 0;
+    width: 70px;
+    transition-duration: 0.7s;
+}
+
+.element3:hover .desc2{
+    width: 70px;
+    margin-left: -45px;
+    opacity: 1;
+    transition-duration: 0.9s;
+    transition-delay: 0.2s;
+}
+
+/* EDITAR O CSS DA AREA DE CRUZEIROS NESTE LOCAL */
+
+#cruzeiros{
+    height: 450px;
+    display: flex;
+    border-radius: 30px 0px 30px 0px;
+    background-color: royalblue;
+}
+
+.cmar{
+    background-color: white;
+    width: 280px;
+    height: 370px;
+    margin: 40px 15px;
+    border: 1px solid black;
+}
+
+.cmar:hover{
+    box-shadow: 0px 0px 3px 3px rgba(12, 12, 8, 0.3);
+}
+
+.cimg1{
+    background: url(img/cruzeiros/c1.jpeg) no-repeat;
+    background-size: 280px;
+    width: 280px;
+    height: 180px;
+    background-position: center;
+    transition-duration: 0.9s;
+}
+
+.cimg2{
+    background: url(img/cruzeiros/c2.jpeg) no-repeat;
+    background-size: 280px;
+    width: 280px;
+    height: 180px;
+    background-position: center;
+    transition-duration: 0.9s;
+}
+
+.cimg3{
+    background: url(img/cruzeiros/c3.jpeg) no-repeat;
+    background-size: 325px;
+    width: 280px;
+    height: 180px;
+    background-position: center;
+    transition-duration: 0.9s;
+}
+
+.cimg4{
+    background: url(img/cruzeiros/c4.jpeg) no-repeat;
+    background-size: 295px;
+    width: 280px;
+    height: 180px;
+    background-position: center;
+    transition-duration: 0.9s;
+}
+
+.cmar:hover .cimg1{
+    background-size: 320px;
+    transition-duration: 0.9s;
+}
+
+.cmar:hover .cimg2{
+    background-size: 320px;
+    transition-duration: 0.9s;
+}
+
+.cmar:hover .cimg3{
+    background-size: 390px;
+    transition-duration: 0.9s;
+}
+
+.cmar:hover .cimg4{
+    background-size: 350px;
+    transition-duration: 0.9s;
+}
+
+.cmar h3{
+    margin: 10px 20px;
+}
+
+.ccont{
+    margin: 10px 20px;
+}
+
+.valor h1{
+    margin-left: 10px;
+}
+
+#cruzeiros button{
+    width: 100px;
+    height: 40px;
+    margin: 0px 90px;
+    border-radius: 5px;
+    color: white;
+    background-color: black;
+    opacity: 0.7;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+#cruzeiros button:hover{
+    opacity: 0.8;
+}
+
+/* EDITAR O CSS DA AREA DE CARROS NESTE LOCAL */
+
+.anun{
+    text-decoration: none;
+}
+
+#carros{
+    height: 250px;
+    display: flex;
+    background-color: #9F81F7;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px 5px rgba(1, 1,0,0.1);
+}
+
+#carros h1{
+    margin: 25px 20px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
+.caelement{
+    width: 280px;
+    height: 200px;
+    background-color: black;
+    margin: 20px 20px;
+    border-radius: 20px;
+    opacity: 0.9;
+}
+
+.caelement:hover{
+    box-shadow: 0px 0px 5px 5px rgba(1, 1,0,0.1);
+}
+
+.cimgss1 img{
+    width: 252px;
+    height: 150px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.cimgss2 img{
+    width: 250px;
+    height: 150px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.cimgss3 img{
+    width: 252px;
+    height: 150px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.caelement p{
+    text-align: center;
+    color: white;
+}
+
+/* FOOTER */
+
+footer{
+    width: 100%;
+    height: 220px;
+    background-color: #084B8A;
+    position: relative;
+    bottom: 0px;
+    display: flex;
+}
+
+footer div{
+margin: 50px 90px ;
+color: white;
+}
+
+.pagamentos h3{
+width: 220px;
+text-align: center;
+}
+
+.pag{
+display: flex;
+margin-top: 10px;
+margin-left: 20px;
+}
+
+.pag img{
+margin: 10px;
+width: 40px;
+}
+
+.contatos h3{
+text-align: center;
+margin-bottom: 15px;
+}
+
+.contact{
+display: flex;
+width: 15px;
+margin-top: 20px;
+margin-left: 10px;
+margin-bottom: 0px;
+}
+
+.contact img{
+width: 15px;
+margin-right: 7px;
+}
+
+.tele{
+display: flex;
+height: 15px;
+margin-top: 10px;
+margin-left: 10px;
+
+}
+
+.tele img{
+width: 15px;
+margin-top: 3px;
+margin-right: 5px;
+}
+
+.seguro{
+display: flex;
+height: 20px;
+margin: 0px;
+position: absolute;
+right: 10px;
+bottom: 20px;
+}
+
+.seguro p{
+margin-right: 5px;
+}
+
+.seguro img{
+width: 20px;
+height: 20px;
+}
+
+/* Fale conosco */
+
+.fale{
+    position: fixed;
+    bottom: 37px;
+    right: 20px;
+    display: flex;
+    margin-right: -100px;
+    transition-duration: 0.9s;
+}
+
+.fl{
+    width: 40px;
+    height: 40px;
+    border-radius: 45%;
+    background: white url(img/faleconosco.png) 50% 50% no-repeat;
+    background-size: 40px;
+    cursor: pointer;
+}
+
+.fale:hover{
+    margin-right: 0;
+    transition-duration: 0.9s;
+}
+
+.fale:hover input{
+    opacity: 1;
+    transition-duration: 0.3s;
+}
+
+.fale:hover .fl{
+    width: 43px;
+    border-radius: 20px 0px 0px 20px;
+    transition-duration: 0.3s;
+}
+
+.fale input{
+    width: 100px;
+    height: 40px;
+    border-radius: 0px 20px 20px 0px;
+    border: 2px solid white;
+    background-color: white;
+    opacity: 0;
+    outline: none;
+    cursor: pointer;
+}

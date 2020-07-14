@@ -1,0 +1,346 @@
+/*CSS DA PÁGINA*/
+
+/* NAVBAR */
+
+*  {
+  margin:0;
+  padding:0;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+html, body {
+  height:100%;
+  width:100%;
+  background-color: #CECEF6;
+}
+
+header{
+  height: 160px;
+  position: relative;
+}
+
+.logo img{
+  width: 140px;
+  margin-top: -20px;
+  margin-bottom: -20px;
+}
+
+.home{
+  background-color: #084B8A;
+  height: 60px;
+  margin-top: -10px;
+}
+
+.home li{
+  margin: 20px 20px;
+  font-weight: bold;
+  list-style-type: none;
+}
+.home a{ 
+  text-decoration: none;
+  color: #BDBDBD;
+  font-size: 14px;
+  transition-duration: 0.3s;
+}
+
+.menu{
+  display: flex;
+  margin-left: 20px;
+}
+
+.area{
+  transition-duration: 0.4s;
+  display: flex;
+  margin-left: 130px;
+}
+
+.area a{
+  text-decoration: underline;
+  margin-right: 30px;
+}
+
+.area .butto{
+  width: 90px;
+  height: 40px;
+  margin-top: 10px;
+  background-color: white;
+  transition-duration: 0.9s;
+  color: #084B8A;
+  border-radius: 29px;
+  border: 2px solid white;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+}
+
+.butto:hover{
+  border: 2px solid white;
+  background-color: #084B8A;
+  color: white;
+  font-weight: bold;
+  transition-duration: 0.6s;
+}
+
+.home a:hover{    
+  color: white;  
+  transition-duration: 0.3s;
+}
+
+/* CONTEUDO */
+
+.login{
+  width: 450px;
+  height: 300px;
+  border: 2px solid black;
+  margin-left: 400px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  background-color: black;
+  opacity: 0.8;
+  border-radius: 10px;
+}
+
+.login h4{
+  margin: 5px 15px;
+  color: white;
+}
+
+.contlogin{
+  width: 400px;
+  height: 240px;
+  border: 2px solid black;
+  margin: 5px 24px;
+  background-color: white;
+}
+
+.loginp{
+  margin-top: 40px;
+  margin-left: 20px;
+}
+
+.loginp input{
+  width: 250px;
+  height: 20px;
+  margin-top: 3px;
+  border: 1px solid black;
+}
+
+.senhap{
+  margin: 0px 20px;
+  margin-top: 10px;
+  margin-bottom:3px;
+}
+
+.senhap input{
+  width: 250px;
+  height: 20px;
+  margin-top: 3px;
+  border: 1px solid black;
+}
+
+form a{
+  font-size: 11px;
+  color: black;
+}
+
+form p{
+  margin-left: 170px;
+  color: #848484;
+  width: 105px;
+}
+
+form p:hover{
+  color: black;
+}
+
+form input[type=submit]{
+  width: 90px;
+  height:30px;
+  margin-top: 30px;
+  margin-left: 160px;
+  background-color: black;
+  color: white;
+  opacity: 0.9;
+  border: none;
+  border-radius: 5px;
+}
+
+form input[type=submit]:hover{
+  opacity: 1;
+}
+
+.cadastro{
+  width: 450px;
+  height:130px;
+  border: 2px solid black;
+  margin-left: 400px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  background-color: black;
+  opacity: 0.8;
+  border-radius: 10px;
+}
+
+.cadastro h4{
+  margin: 5px 15px;
+  color: white;
+}
+
+.cadastrop{
+  width: 390px;
+  height: 70px;
+  border: 2px solid black;
+  margin: 0px 27px;
+  background-color: white;
+}
+
+.cadastrop p{
+  margin-top: 5px;
+  margin-left: 15px;
+}
+
+.cadastrop button{
+  margin-top: 5px;
+  margin-left: 150px;
+  background-color: black;
+  color: white;
+  width: 90px;
+  height:30px;
+  border-radius: 5px;
+  opacity: 0.9;
+  border: none;
+}
+
+.cadastrop button:hover{
+  opacity: 1;
+}
+
+/* FOOTER */
+
+footer{
+  width: 100%;
+  height: 220px;
+  background-color: #084B8A;
+  position: relative;
+  bottom: -15px;
+  display: flex;
+}
+
+footer div{
+  margin: 50px 90px ;
+  color: white;
+}
+
+.pagamentos h3{
+  width: 220px;
+  text-align: center;
+}
+
+.pag{
+  display: flex;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.pag img{
+  margin: 10px;
+  width: 40px;
+}
+
+.contatos h3{
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.contact{
+  display: flex;
+  width: 15px;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-bottom: 0px;
+}
+
+.contact img{
+  width: 15px;
+  margin-right: 7px;
+}
+
+.tele{
+  display: flex;
+  height: 15px;
+  margin-top: 10px;
+  margin-left: 10px;
+
+}
+
+.tele img{
+  width: 15px;
+  margin-top: 3px;
+  margin-right: 5px;
+}
+
+.seguro{
+  display: flex;
+  height: 20px;
+  margin: 0px;
+  position: absolute;
+  right: 10px;
+  bottom: 20px;
+}
+
+.seguro p{
+  margin-right: 5px;
+}
+
+.seguro img{
+  width: 20px;
+  height: 20px;
+}
+
+/* Fale conosco */
+
+.fale{
+  position: fixed;
+  bottom: 37px;
+  right: 20px;
+  display: flex;
+  margin-right: -100px;
+  transition-duration: 0.9s;
+}
+
+.fl{
+  width: 40px;
+  height: 40px;
+  border-radius: 45%;
+  background: white url(img/faleconosco.png) 50% 50% no-repeat;
+  background-size: 40px;
+  cursor: pointer;
+}
+
+.fale:hover{
+  margin-right: 0;
+  transition-duration: 0.9s;
+}
+
+.fale:hover input{
+  opacity: 1;
+  transition-duration: 0.3s;
+}
+
+.fale:hover .fl{
+  width: 43px;
+  border-radius: 20px 0px 0px 20px;
+  transition-duration: 0.3s;
+}
+
+.fale input{
+  width: 100px;
+  height: 40px;
+  border-radius: 0px 20px 20px 0px;
+  border: 2px solid white;
+  background-color: white;
+  opacity: 0;
+  outline: none;
+  cursor: pointer;
+}

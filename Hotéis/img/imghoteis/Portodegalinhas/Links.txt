@@ -1,0 +1,5 @@
+nome hotel: beira mar
+piscina: https://pixabay.com/pt/photos/piscina-palmeiras-resort-tropical-918593/
+quarto: https://pixabay.com/pt/photos/quarto-de-hotel-cama-almofadas-1447201/
+sala: https://pixabay.com/pt/photos/permanecer-aberto-2132350/
+porto de galinhas praia: https://pixabay.com/pt/photos/porto-de-galinhas-praia-ceu-mar-3424681/

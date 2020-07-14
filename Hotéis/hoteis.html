@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Home</title>
+        <link href="style.css" type="text/css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="pagina">
+          <header>
+                <div class="logo">
+                    <a href="#"><img src="logoviajatour.png"></a>
+                </div><!--Logo-->
+                <nav class="home">
+                    <ul class="menu">
+                        <li><a href="#passagens">Passagens</a></li>
+                        <li><a href="">Hotéis</a></li>
+                        <li><a href="">Cruzeiros</a></li>
+                        <li><a href="">Aluguel de Carros</a></li>
+                        <li><a href="">Pacotes de Viagens</a></li>
+                        <li><a href="">Dicas de Vigens</a></li>
+                        <div class="area">
+                            <li><a href="">Faça o seu cadastro</a></li>
+                            <button class="butto" href="login">Login</button>
+                        </div><!--Area administrativa-->
+                    </ul><!--menu-->
+                </nav><!--home-->
+            </header><!--cabecalho-->
+
+            <div id="simulador">
+                <form >
+                   
+                    <div id="destino">
+                        <label></label>Destino</label> <br>
+                        <input placeholder="Para onde deseja ir?" type="text" id="tama" required> 
+                    </div>
+        
+                    <div id="data">
+                        <label class="font">Data de entreda</label> <br>
+                        <input type="date" required>  
+                    </div>
+
+                    <div id="data">
+                        <label class="font">Data de saída</label> <br>
+                        <input type="date" required>  
+                    </div>
+
+                    <div id="pessoas">
+                        <label for="quantidade">Adultos</label>
+                        <br>
+                        <input type="number" min="1" max="8" for="quantidade" required>
+                    </div>
+
+                    <div id="criancas">
+                        <label for="quantidade">Crianças</label>
+                        <br>
+                        <input type="number" min="1" max="8" for="quantidade" required>
+                    </div>
+        
+                    <div id="botao">
+                       <input type="submit" value="Procurar hotéis">
+                    </div>
+                
+                </form>
+        
+            </div>
+
+            <div class="conteudo">
+
+                <div id="cont">
+                    <div class="hote">
+                        <div class="imgf">
+                        </div>
+                        <div class="desc">
+                            <p class="titus">Burj Al Arab</p>
+                            <P>Dubai</P>
+                            <div class="estrelas">
+                                <img src="img/estrela.png">
+                                <img src="img/estrela.png">
+                                <img src="img/estrela.png">
+                                <img src="img/estrela.png">
+                                <img src="img/estrela.png">
+                            </div>
+                            <p>Preço</p>
+                            <div class="cont4">    
+                                <p>R$</p>
+                                <h1>7795</h1>
+                            </div>
+                            <a href="#dubai"><button>Detalhes do Hotel</button></a>
+                        </div>
+                    </div>
+                    <div class="hote">
+                        <div class="imgf1">
+                        </div>
+                        <div class="desc">
+                            <p class="titus">Mandalay Bay</p>
+                            <p>Las Vegas</p>
+                            <div class="estrelas">
+                                <img src="img/estrela.png">
+                                <img src="img/estrela.png">
+                                <img src="img/estrela.png">
+                                <img src="img/estrela.png">
+                                <img src="img/estrela.png">
+                            </div>
+                            <p>Preço</p>
+                            <div class="cont4">    
+                                <p>R$</p>
+                                <h1>557</h1>
+                            </div>
+                            <a href="#mandalay"><button>Detalhes do Hotel</button></a>
+                        </div>
+                    </div>
+                    <div class="hote">
+                        <div class="imgf2">
+                        </div>
+                        <div class="desc">
+                            <p class="titus">Brisa Tower</p>
+                            <p>Maceió</p>
+                            <div class="estrelas">
+                                <img src="img/estrela.png">
+                                <img src="img/estrela.png">
+                                <img src="img/estrela.png">
+                                <img src="img/estrela.png">
+                            </div>
+                            <p>Preço</p>
+                            <div class="cont4">    
+                                <p>R$</p>
+                                <h1>234</h1>
+                            </div>
+                            <a href="#brisa"><button>Detalhes do Hotel</button></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="cont2">
+                    <div class="hote2">
+                        <img src="img/imghoteis/hotel/rio de janeiro hotel.jpg">
+                        <div class="desc2">
+                            <div>    
+                                <div class="desc3">    
+                                    <h1 class="titus">Atlantico Sul</h1>
+                                    <p>Rio de Janeiro</p>
+                                </div>
+                                <div class="estrelas2">
+                                    <img src="img/estrela.png">
+                                    <img src="img/estrela.png">
+                                    <img src="img/estrela.png">
+                                    <img src="img/estrela.png">
+                                </div>
+                            </div>
+                            <div>    
+                                <p class="p1">Preço</p>
+                                <div class="cont5">    
+                                    <p>R$</p>
+                                    <h1>220</h1>
+                                </div>
+                            </div>    
+                            <a href="#atlantico"><button>Detalhes do Hotel</button></a>
+                        </div>
+                    </div>
+
+                    <div class="hote2">
+                        <img src="img/imghoteis/Porto seguro/Porto seguro hotel.jpg">
+                        <div class="desc2">
+                            <div>    
+                                <div class="desc3">    
+                                    <h1 class="titus">Vila Miola</h1>
+                                    <p>Porto Seguro</p>
+                                </div>
+                                <div class="estrelas2">
+                                    <img src="img/estrela.png">
+                                    <img src="img/estrela.png">
+                                    <img src="img/estrela.png">
+                                    <img src="img/estrela.png">
+                                </div>
+                            </div>
+                            <div>    
+                                <p class="p1">Preço</p>
+                                <div class="cont5">    
+                                    <p>R$</p>
+                                    <h1>140</h1>
+                                </div>
+                            </div>    
+                            <a href="#vila"><button>Detalhes do Hotel</button></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="cont">
+                    <div class="hote">
+                        <div class="imgf3">
+                        </div>
+                        <div class="desc">
+                            <p class="titus">Estação do Sol</p>
+                            <p>Pernanbuco</p>
+                            <div class="estrelas">
+                                <img src="img/estrela.png">
+                                <img src="img/estrela.png">
+                                <img src="img/estrela.png">
+                                <img src="img/estrela.png">
+                                <img src="img/estrela.png">
+                            </div>
+                            <p>Preço</p>
+                            <div class="cont4">    
+                                <p>R$</p>
+                                <h1>258</h1>
+                            </div>
+                            <a href="#dosol"><button>Detalhes do Hotel</button></a>
+                        </div>
+                    </div>
+                    <div class="hote">
+                        <div class="imgf4">
+                        </div>
+                        <div class="desc">
+                            <p class="titus">Beira Mar</p>
+                            <p>Pernanbuco</p>
+                            <div class="estrelas">
+                                <img src="img/estrela.png">
+                                <img src="img/estrela.png">
+                                <img src="img/estrela.png">
+                                <img src="img/estrela.png">
+                                <img src="img/estrela.png">
+                            </div>
+                            <p>Preço</p>
+                            <div class="cont4">    
+                                <p>R$</p>
+                                <h1>192</h1>
+                            </div>
+                            <a href="#beiramar"><button>Detalhes do Hotel</button></a>
+                        </div>
+                    </div>
+                    <div class="hote">
+                        <div class="imgf5">
+                        </div>
+                        <div class="desc">
+                            <p class="titus">Intercity Salvador</p>
+                            <p>Salvador</p>
+                            <div class="estrelas">
+                                <img src="img/estrela.png">
+                                <img src="img/estrela.png">
+                                <img src="img/estrela.png">
+                                <img src="img/estrela.png">
+                                <img src="img/estrela.png">
+                            </div>
+                            <p>Preço</p>
+                            <div class="cont4">    
+                                <p>R$</p>
+                                <h1>219</h1>
+                            </div>
+                            <a href="#salvador"><button>Detalhes do Hotel</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="dubai" class="galeria">
+                    <div class="gimgs">
+                        <div class="img">
+                            <img class="hotel" src="img/imghoteis/Dubai/Dubai Hotel.jpg">
+                            <img class="quarto" src="img/imghoteis/Dubai/Dubai quarto.jpg">
+                        </div>
+                        <div class="img2">
+                            <img class="praia" src="img/imghoteis/Dubai/Dubai praia.jpg">
+                            <img class="sala" src="img/imghoteis/Dubai/Dubai sala.jpg">
+                            <img class="piscina"src="img/imghoteis/Dubai/Dubai Piscina.jpg">
+                        </div>
+                    </div>
+                    <div class="gdesc">
+                        <h2>Burj Al Arab</h2>
+                        <h4>Informações do Hotel</h4>
+                        <div id="info">
+                            <div class="info1"> 
+                                <h5>Serviços</h5>
+                                <p><img src="img/yes.png">Recepção 24 horas</p>
+                                <p><img src="img/yes.png">Lavanderia</p>
+                                <p><img src="img/yes.png">Salão de beleza</p>
+                                <p><img src="img/yes.png">Assistência para passeios/bilhetes</p>
+                                <h5>Conforto</h5>
+                                <p><img src="img/yes.png">Minibar</p>
+                                <p><img src="img/yes.png">Ar-condicionado</p>
+                                <p><img src="img/yes.png">Roupões de banho</p>
+                                <p><img src="img/yes.png">Máquina de café/chá</p>
+                                <h5>alimentação</h5>
+                                <p><img src="img/yes.png">Café da manhã</p>
+                                <p><img src="img/yes.png">Bar ao lado da piscina</p>
+                                <p><img src="img/yes.png">lanchonete</p>
+                                <p><img src="img/yes.png">Serviço de quarto 24 horas</p>
+                            </div>
+                            <div class="info2">
+                                <h5>Atividades</h5>
+                                <p><img src="img/yes.png">Piscina externa</p>
+                                <p><img src="img/yes.png">Academias</p>
+                                <p><img src="img/yes.png">Sauna</p>
+                                <p><img src="img/yes.png">Aluguel de bicicletas</p>
+                                <h5>Idiomas</h5>
+                                <p><img src="img/yes.png">Inglês</p>
+                                <p><img src="img/yes.png">Espanhol</p>
+                                <p><img src="img/yes.png">Árabe</p>
+                                <p><img src="img/yes.png">Francês</p>
+                                <h5>Internet</h5>
+                                <p><img src="img/yes.png">Wi-Fi grátis</p>
+                            </div>
+                            <div class="info3">
+                                <h5>Localização</h5>
+                                <a href="https://www.google.com/maps/place/Burj+Al+Arab/@25.1411914,55.1852468,15z/data=!4m8!3m7!1s0x0:0xb3da71b879f0e038!5m2!4m1!1i2!8m2!3d25.1411914!4d55.1852468" target="_blank"><p><img src="img/local.png">Jumeirah St - Dubai - Emirados Árabes Unidos</p></a>
+                                <p><img src="img/yes.png">Hotel 5 estrelas</p>
+                                <p><img src="img/yes.png">Check-In A partir das 15h00</p>
+                                <p><img src="img/yes.png">Check-out Até as 12h00</p>
+                                <br>
+                                <p>diária</p>
+                                <div class="cont4">    
+                                    <p>R$</p>
+                                    <h1>7.795</h1>
+                                </div>
+                                <button>Reservar agora</button>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--g1-->
+
+                <div id="mandalay" class="galeria">
+                    <div class="vdesc">
+                        <h2 class="tl">Mandalay Bay</h2>
+                        <h4 class="tl1">Informações do Hotel</h4>
+                        <div id="info">
+                            <div class="info1"> 
+                                <h5>Serviços</h5>
+                                <p><img src="img/yes.png">Recepção 24 horas</p>
+                                <p><img src="img/yes.png">Lavanderia</p>
+                                <p><img src="img/yes.png">Assistência para passeios/bilhetes</p>
+                                <h5>Conforto</h5>
+                                <p><img src="img/yes.png">Minibar</p>
+                                <p><img src="img/yes.png">Ar-condicionado</p>
+                                <p><img src="img/yes.png">Roupões de banho</p>
+                                <h5>alimentação</h5>
+                                <p><img src="img/yes.png">Café da manhã</p>
+                                <p><img src="img/yes.png">Bar ao lado da piscina</p>
+                                <p><img src="img/yes.png">lanchonete</p>
+                                <p><img src="img/yes.png">Serviço de quarto 24 horas</p>
+                            </div>
+                            <div class="info2">
+                                <h5>Atividades</h5>
+                                <p><img src="img/yes.png">Piscina externa</p>
+                                <p><img src="img/yes.png">Academias</p>
+                                <h5>Idiomas</h5>
+                                <p><img src="img/yes.png">Inglês</p>
+                                <p><img src="img/yes.png">Espanhol</p>
+                                <h5>Internet</h5>
+                                <p><img src="img/yes.png">Wi-Fi grátis</p>
+                            </div>
+                            <div class="info3">
+                                <h5>Localização</h5>
+                                <a href="https://www.google.com/maps/dir//THEhotel+at+Mandalay+Bay,+3940+S+Las+Vegas+Blvd,+Las+Vegas,+NV+89119,+Estados+Unidos/@36.0935318,-115.2477051,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x80c8c5cf643bc6d7:0xf6a346da9dc7b854!2m2!1d-115.177665!2d36.0935522?hl=pt-BR" target="_blank"><p><img src="img/local.png">Las Vegas Blvd, Las Vegas, NV 89119, Estados Unidos</p></a>
+                                <p><img src="img/yes.png">Hotel 5 estrelas</p>
+                                <p><img src="img/yes.png">Check-In A partir das 13h00</p>
+                                <p><img src="img/yes.png">Check-out Até as 11h00</p>
+                                <br>
+                                <p>diária</p>
+                                <div class="cont4">    
+                                    <p>R$</p>
+                                    <h1>557</h1>
+                                </div>
+                                <button>Reservar agora</button>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vimgs">
+                        <div class="imgvegas">
+                            <img class="vhotel" src="img/imghoteis/Lasvegas/Hotel las vegas.jpg">
+                            <img class="vquarto" src="img/imghoteis/Lasvegas/las vegas quarto.jpg">
+                        </div>
+                        <div class="imgvegas2">
+                            <img class="valimentacao" src="img/imghoteis/Lasvegas/alimentação.jpg">
+                            <img class="vpiscina" src="img/imghoteis/Lasvegas/las vegas piscina.jpg">
+                            <img class="vsala" src="img/imghoteis/Lasvegas/las vegas sala.jpg">
+                        </div>
+                    </div>
+                </div><!--g2-->
+
+                <div id="brisa" class="galeria">
+                    <div class="gimgs">
+                        <div class="img">
+                            <img class="hotel" src="img/imghoteis/maceió/sala.jpg">
+                            <img class="quarto3" src="img/imghoteis/maceió/quarto.jpg">
+                        </div>
+                        <div class="img2">
+                            <img class="praia3" src="img/imghoteis/maceió/maceio praia.jpg">
+                            <img class="sala3" src="img/imghoteis/maceió/hotel em maceio.jpg">
+                        </div>
+                    </div>
+                    <div class="gdesc">
+                        <h2>Brisa Tower</h2>
+                        <h4>Informações do Hotel</h4>
+                        <div id="info">
+                            <div class="info1"> 
+                                <h5>Serviços</h5>
+                                <p><img src="img/yes.png">Recepção 24 horas</p>
+                                <p><img src="img/yes.png">Lavanderia</p>
+                                <h5>Conforto</h5>
+                                <p><img src="img/yes.png">Minibar</p>
+                                <p><img src="img/yes.png">Ar-condicionado</p>
+                                <p><img src="img/yes.png">Roupões de banho</p>
+                                <h5>alimentação</h5>
+                                <p><img src="img/yes.png">Café da manhã</p>
+                                <p><img src="img/yes.png">lanchonete</p>
+                                <p><img src="img/yes.png">Serviço de quarto 24 horas</p>
+                            </div>
+                            <div class="info2">
+                                <h5>Atividades</h5>
+                                <p><img src="img/yes.png">Piscina externa</p>
+                                <p><img src="img/yes.png">Academias</p>
+                                <h5>Idiomas</h5>
+                                <p><img src="img/yes.png">Inglês</p>
+                                <p><img src="img/yes.png">Espanhol</p>
+                                <p><img src="img/yes.png">Português</p>
+                                <h5>Internet</h5>
+                                <p><img src="img/yes.png">Wi-Fi grátis</p>
+                            </div>
+                            <div class="info3">
+                                <h5>Localização</h5>
+                                <a href="https://www.google.com/maps/place/Hotel+Brisa+Tower/@-9.6486632,-35.7006433,15z/data=!4m8!3m7!1s0x0:0x5aa1f9ccc6a74167!5m2!4m1!1i2!8m2!3d-9.6486632!4d-35.7006433" target="_blank"><p><img src="img/local.png">Av. Álvaro Otacílio, 4201 - Jatiúca, Maceió - AL</p></a>
+                                <p><img src="img/yes.png">Hotel 4 estrelas</p>
+                                <p><img src="img/yes.png">Check-In A partir das 12h00</p>
+                                <p><img src="img/yes.png">Check-out Até as 16h00</p>
+                                <br>
+                                <p>diária</p>
+                                <div class="cont4">    
+                                    <p>R$</p>
+                                    <h1>234</h1>
+                                </div>
+                                <button>Reservar agora</button>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--g3-->
+
+                <div id="atlantico" class="galeria">
+                    <div class="vdesc">
+                        <h2 class="tl">Atlantico Sul</h2>
+                        <h4 class="tl1">Informações do Hotel</h4>
+                        <div id="info">
+                            <div class="info1"> 
+                                <h5>Serviços</h5>
+                                <p><img src="img/yes.png">Recepção 24 horas</p>
+                                <h5>Conforto</h5>
+                                <p><img src="img/yes.png">Ar-condicionado</p>
+                                <p><img src="img/yes.png">Roupões de banho</p>
+                                <h5>alimentação</h5>
+                                <p><img src="img/yes.png">Café da manhã</p>
+                                <p><img src="img/yes.png">lanchonete</p>
+                                <p><img src="img/yes.png">Serviço de quarto 24 horas</p>
+                            </div>
+                            <div class="info2">
+                                <h5>Atividades</h5>
+                                <p><img src="img/yes.png">Piscina externa</p>
+                                <p><img src="img/yes.png">Academias</p>
+                                <h5>Idiomas</h5>
+                                <p><img src="img/yes.png">Inglês</p>
+                                <p><img src="img/yes.png">Português</p>
+                                <h5>Internet</h5>
+                                <p><img src="img/yes.png">Wi-Fi grátis</p>
+                            </div>
+                            <div class="info3">
+                                <h5>Localização</h5>
+                                <a href="https://www.google.com/maps/place/Atlantico+Sul+Hotel/@-23.0299653,-43.4702406,15z/data=!4m8!3m7!1s0x0:0xb23c1505f9f50634!5m2!4m1!1i2!8m2!3d-23.0299653!4d-43.4702406" target="_blank"><p><img src="img/local.png">Av. Lúcio Costa, 18000 - Recreio dos Bandeirantes, Rio de Janeiro - RJ</p></a>
+                                <p><img src="img/yes.png">Hotel 3 estrelas</p>
+                                <p><img src="img/yes.png">Check-In A partir das 14h00</p>
+                                <p><img src="img/yes.png">Check-out Até as 11h00</p>
+                                <br>
+                                <p>diária</p>
+                                <div class="cont4">    
+                                    <p>R$</p>
+                                    <h1>220</h1>
+                                </div>
+                                <button>Reservar agora</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vimgs">
+                        <div class="imgvegas">
+                            <img class="rhotel" src="img/imghoteis/hotel/rio de janeiro hotel.jpg">
+                            <img class="rquarto" src="img/imghoteis/hotel/quarto.jpg">
+                        </div>
+                        <div class="imgvegas2">
+                            <img class="rsala" src="img/imghoteis/hotel/sala.jpg">
+                        </div>
+                    </div>
+                </div><!--g4-->
+
+                <div id="vila" class="galeria">
+                    <div class="gimgs">
+                        <div class="img">
+                            <img class="photel" src="img/imghoteis/Porto seguro/Porto seguro hotel.jpg">
+                            <img class="pquarto" src="img/imghoteis/Porto seguro/Porto seguro quarto.jpg">
+                        </div>
+                        <div class="img2">
+                            <img class="psala" src="img/imghoteis/Porto seguro/Porto seguro sala.jpg">
+                        </div>
+                    </div>
+                    <div class="gdesc">
+                        <h2>Vila Miola</h2>
+                        <h4>Informações do Hotel</h4>
+                        <div id="info">
+                            <div class="info1"> 
+                                <h5>Serviços</h5>
+                                <p><img src="img/yes.png">Recepção 24 horas</p>
+                                <p><img src="img/yes.png">Lavanderia</p>
+                                <h5>Conforto</h5>
+                                <p><img src="img/yes.png">Minibar</p>
+                                <p><img src="img/yes.png">Ar-condicionado</p>
+                                <p><img src="img/yes.png">Roupões de banho</p>
+                                <h5>alimentação</h5>
+                                <p><img src="img/yes.png">Café da manhã</p>
+                                <p><img src="img/yes.png">Bar ao lado da piscina</p>
+                                <p><img src="img/yes.png">Serviço de quarto 24 horas</p>
+                            </div>
+                            <div class="info2">
+                                <h5>Atividades</h5>
+                                <p><img src="img/yes.png">Piscina externa</p>
+                                <p><img src="img/yes.png">Academias</p>
+                                <h5>Idiomas</h5>
+                                <p><img src="img/yes.png">Inglês</p>
+                                <p><img src="img/yes.png">Português</p>
+                                <h5>Internet</h5>
+                                <p><img src="img/yes.png">Wi-Fi grátis</p>
+                            </div>
+                            <div class="info3">
+                                <h5>Localização</h5>
+                                <a href="https://www.google.com/maps/place/Vila+Miola+Hotel/@-16.3876689,-39.0397564,15z/data=!4m8!3m7!1s0x0:0x433b09d333b82bb6!5m2!4m1!1i2!8m2!3d-16.3876689!4d-39.0397564" target="_blank"><p><img src="img/local.png">R. dos Mamoeiros, 400, Porto Seguro - BA</p></a>
+                                <p><img src="img/yes.png">Hotel 4 estrelas</p>
+                                <p><img src="img/yes.png">Check-In A partir das 15h00</p>
+                                <p><img src="img/yes.png">Check-out Até as 12h00</p>
+                                <br>
+                                <p>diária</p>
+                                <div class="cont4">    
+                                    <p>R$</p>
+                                    <h1>140</h1>
+                                </div>
+                                <button>Reservar agora</button>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--g5-->
+
+                <div id="dosol" class="galeria">
+                    <div class="vdesc">
+                        <h2 class="tl">Estação do Sol</h2>
+                        <h4 class="tl1">Informações do Hotel</h4>
+                        <div id="info">
+                            <div class="info1"> 
+                                <h5>Serviços</h5>
+                                <p><img src="img/yes.png">Recepção 24 horas</p>
+                                <h5>Conforto</h5>
+                                <p><img src="img/yes.png">Ar-condicionado</p>
+                                <p><img src="img/yes.png">Roupões de banho</p>
+                                <h5>alimentação</h5>
+                                <p><img src="img/yes.png">Café da manhã</p>
+                                <p><img src="img/yes.png">Bar ao lado da piscina</p>
+                                <p><img src="img/yes.png">lanchonete</p>
+                                <p><img src="img/yes.png">Serviço de quarto 24 horas</p>
+                            </div>
+                            <div class="info2">
+                                <h5>Atividades</h5>
+                                <p><img src="img/yes.png">Piscina externa</p>
+                                <p><img src="img/yes.png">Academias</p>
+                                <p><img src="img/yes.png">Aluguel de bicicletas</p>
+                                <h5>Idiomas</h5>
+                                <p><img src="img/yes.png">Inglês</p>
+                                <p><img src="img/yes.png">Português</p>
+                                <h5>Internet</h5>
+                                <p><img src="img/yes.png">Wi-Fi grátis</p>
+                            </div>
+                            <div class="info3">
+                                <h5>Localização</h5>
+                                <a href="https://www.google.com/maps/place/Esta%C3%A7%C3%A3o+do+Sol+Praia+Hotel/@-8.503567,-35.005313,15z/data=!4m8!3m7!1s0x0:0x4476564e1537a684!5m2!4m1!1i2!8m2!3d-8.503567!4d-35.005313" target="_blank"><p><img src="img/local.png">Condomínio Merepe III - LOTE 4, QUADRA 2A - Porto de Galinhas, Ipojuca - PE</p></a>
+                                <p><img src="img/yes.png">Hotel 4 estrelas</p>
+                                <p><img src="img/yes.png">Check-In A partir das 14h00</p>
+                                <p><img src="img/yes.png">Check-out Até as 11h00</p>
+                                <br>
+                                <p>diária</p>
+                                <div class="cont4">    
+                                    <p>R$</p>
+                                    <h1>258</h1>
+                                </div>
+                                <button>Reservar agora</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vimgs">
+                        <div class="imgvegas">
+                            <img class="pehotel" src="img/imghoteis/Pernanbuco/Hotel.jpg">
+                            <img class="pequarto" src="img/imghoteis/Pernanbuco/quarto.jpg">
+                        </div>
+                        <div class="imgvegas2">
+                            <img class="pepiscina" src="img/imghoteis/Pernanbuco/Piscina.jpg">
+                            <img class="pesala" src="img/imghoteis/Pernanbuco/sala.jpg">
+                        </div>
+                    </div>
+                </div><!--g6-->
+
+                <div id="beiramar" class="galeria">
+                    <div class="gimgs">
+                        <div class="img">
+                            <img class="pohotel" src="img/imghoteis/Portodegalinhas/Porto de galinhas hotel.jpg">
+                            <img class="poquarto" src="img/imghoteis/Portodegalinhas/quarto.jpg">
+                        </div>
+                        <div class="imgdubai2">
+                            <img class="popraia" src="img/imghoteis/Portodegalinhas/porto de galinhas praia.jpg">
+                            <img class="posala" src="img/imghoteis/Portodegalinhas/sala.jpg">
+                        </div>
+                    </div>
+                    <div class="gdesc">
+                        <h2>Beira Mar</h2>
+                        <h4>Informações do Hotel</h4>
+                        <div id="info">
+                            <div class="info1"> 
+                                <h5>Serviços</h5>
+                                <p><img src="img/yes.png">Recepção 24 horas</p>
+                                <h5>Conforto</h5>
+                                <p><img src="img/yes.png">Minibar</p>
+                                <p><img src="img/yes.png">Ar-condicionado</p>
+                                <p><img src="img/yes.png">Roupões de banho</p>
+                                <h5>alimentação</h5>
+                                <p><img src="img/yes.png">Café da manhã</p>
+                                <p><img src="img/yes.png">Serviço de quarto 24 horas</p>
+                            </div>
+                            <div class="info2">
+                                <h5>Atividades</h5>
+                                <p><img src="img/yes.png">Piscina externa</p>
+                                <p><img src="img/yes.png">Aluguel de bicicletas</p>
+                                <h5>Idiomas</h5>
+                                <p><img src="img/yes.png">Inglês</p>
+                                <p><img src="img/yes.png">Português</p>
+                                <h5>Internet</h5>
+                                <p><img src="img/yes.png">Wi-Fi grátis</p>
+                            </div>
+                            <div class="info3">
+                                <h5>Localização</h5>
+                                <a href="https://www.google.com/maps/place/Beira+Mar+Porto+de+Galinhas+Hotel/@-8.4855165,-35.0006485,15z/data=!4m8!3m7!1s0x0:0x2cf331612c467efd!5m2!4m1!1i2!8m2!3d-8.4855165!4d-35.0006485" target="_blank"><p><img src="img/local.png">Avenida Beira Mar, s/n - Porto de Galinhas, Ipojuca - PE</p></a>
+                                <p><img src="img/yes.png">Hotel 4 estrelas</p>
+                                <p><img src="img/yes.png">Check-In A partir das 16h00</p>
+                                <p><img src="img/yes.png">Check-out Até as 12h00</p>
+                                <br>
+                                <p>diária</p>
+                                <div class="cont4">    
+                                    <p>R$</p>
+                                    <h1>192</h1>
+                                </div>
+                                <button>Reservar agora</button>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--g7-->
+
+                <div id="salvador" class="galeria">
+                    <div class="vdesc">
+                        <h2 class="tl">Intercity Salvador</h2>
+                        <h4 class="tl1">Informações do Hotel</h4>
+                        <div id="info">
+                            <div class="info1"> 
+                                <h5>Serviços</h5>
+                                <p><img src="img/yes.png">Recepção 24 horas</p>
+                                <p><img src="img/yes.png">Lavanderia</p>
+                                <h5>Conforto</h5>
+                                <p><img src="img/yes.png">Minibar</p>
+                                <p><img src="img/yes.png">Ar-condicionado</p>
+                                <p><img src="img/yes.png">Roupões de banho</p>
+                                <h5>alimentação</h5>
+                                <p><img src="img/yes.png">Café da manhã</p>
+                                <p><img src="img/yes.png">lanchonete</p>
+                                <p><img src="img/yes.png">Serviço de quarto 24 horas</p>
+                            </div>
+                            <div class="info2">
+                                <h5>Atividades</h5>
+                                <p><img src="img/yes.png">Piscina externa</p>
+                                <p><img src="img/yes.png">Aluguel de bicicletas</p>
+                                <h5>Idiomas</h5>
+                                <p><img src="img/yes.png">Inglês</p>
+                                <p><img src="img/yes.png">Português</p>
+                                <h5>Internet</h5>
+                                <p><img src="img/yes.png">Wi-Fi grátis</p>
+                            </div>
+                            <div class="info3">
+                                <h5>Localização</h5>
+                                <a href="https://www.google.com/maps/place/Hotel+Intercity+Salvador/@-12.980815,-38.4506303,15z/data=!4m8!3m7!1s0x0:0x7d2862e722bbe17e!5m2!4m1!1i2!8m2!3d-12.980815!4d-38.4506303" target="_blank"><p><img src="img/local.png">Av. Tancredo Neves, 2227 - Caminho das Árvores, Salvador - BA</p></a>
+                                <p><img src="img/yes.png">Hotel 4 estrelas</p>
+                                <p><img src="img/yes.png">Check-In A partir das 13h00</p>
+                                <p><img src="img/yes.png">Check-out Até as 12h00</p>
+                                <br>
+                                <p>diária</p>
+                                <div class="cont4">    
+                                    <p>R$</p>
+                                    <h1>219</h1>
+                                </div>
+                                <button>Reservar agora</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vimgs">
+                        <div class="imgvegas">
+                            <img class="shotel" src="img/imghoteis/Salvador/salvador hotel.jpg">
+                            <img class="squarto" src="img/imghoteis/Salvador/salvador quarto.jpg">
+                        </div>
+                        <div class="imgvegas2">
+                            <img class="ssala" src="img/imghoteis/Salvador/salvador sala.jpg">
+                        </div>
+                    </div>
+                </div><!--g8-->
+
+            </div>
+
+
+            <footer>
+                <div class="pagamentos">
+                  <h3>Formas de pagamento</h3>
+                  <div class="pag">
+                      <img src="img/pagamentos/mastercard.png">
+                      <img src="img/pagamentos/visa.png">
+                      <img src="img/pagamentos/elo.png">
+                  </div>
+                </div>
+                <div class="contatos">
+                    <h3>Contatos</h3>
+                    <div class="contact">
+                        <img src="img/email.png">
+                        <p>viajatour@empresa.com</p>
+                    </div>
+                    <div class="tele">    
+                        <img src="img/tell.png">
+                        <p>2222-2222</p>
+                    </div>    
+                </div>
+                <div class="seguro">
+                    <p>Site seguro</p>
+                    <img src="img/seguro.png">
+                </div>
+            </footer>
+          
+          <div class="fale">
+              <div class="fl" href="#">
+              </div>
+              <input type="submit" value="Fale conosco" href="">
+          </div>
+        </div>
+  </body>
+
+</html>

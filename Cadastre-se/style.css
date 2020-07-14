@@ -1,0 +1,273 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+  height:100%;
+  width:100%;
+  background-color: #CECEF6;
+}
+
+header{
+  height: 160px;
+  position: relative;
+}
+
+.home{
+  background-color: #084B8A;
+  height: 60px;
+  margin-top: -10px;
+}
+
+.home li{
+  margin: 20px 20px;
+  font-weight: bold;
+  list-style-type: none;
+}
+.home a{ 
+  text-decoration: none;
+  color: #BDBDBD;
+  font-size: 14px;
+  transition-duration: 0.3s;
+}
+
+.home a:hover{    
+  color: white;  
+  transition-duration: 0.3s;
+}
+
+.menu{
+  display: flex;
+  margin-left: 20px;
+}
+
+.area{
+  transition-duration: 0.4s;
+  display: flex;
+  margin-left: 130px;
+}
+
+.area a{
+  text-decoration: underline;
+  margin-right: 30px;
+}
+
+.area .butto{
+  width: 90px;
+  height: 40px;
+  margin-top: 10px;
+  background-color: white;
+  transition-duration: 0.9s;
+  color: #084B8A;
+  border-radius: 29px;
+  border: 2px solid white;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+}
+
+.butto:hover{
+  border: 2px solid white;
+  background-color: #084B8A;
+  color: white;
+  font-weight: bold;
+  transition-duration: 0.6s;
+}
+
+.container{
+  justify-content: center;
+border: 5px inset #01DFD7;
+width: 500px;
+height: 350px;
+margin-top: 50px;
+margin: auto;
+margin-bottom: 50px;
+background-color: white;
+}
+
+.logohome img{
+  width: 140px;
+  margin-top: -20px;
+  margin-bottom: -20px;
+}
+
+#principal{
+width: 500px;
+height: 350px;
+text-align: center;
+}
+
+#facebook{
+  margin-top: 5px;
+  margin-left: 40px;
+  float: left;
+  }
+
+#facebook input{
+	height: 30px;
+	background-color: rgb(59, 89, 152);
+	color: white;
+	border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#google {
+  margin-top: 5px;
+  margin-right: 40px;
+  float: right;
+}
+
+#google input{
+	height: 30px;
+	background-color: #DF013A;
+	color: white;
+	border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#nome input{
+width: 180px;
+margin-left : 40px;
+float: left;
+}
+
+#sobrenome input{
+width: 200px;
+margin-right: 40px;
+float: right;
+}
+
+#email input{
+margin-top: 20px;
+width: 83%;
+}
+
+#senha input{
+width: 180px;
+margin-left : 40px;
+float: left;
+}
+
+#confirmarsenha input{
+width: 200px;
+margin-right: 40px;
+float: right;
+}
+
+#pais select{
+margin-top: 20px;
+width: 84%;
+height: 20px;
+color: 	gray;
+}
+
+#entrar {
+float: left;
+margin-left: 40px;
+}
+#criarconta input{
+width: 180px;
+float: right;
+margin-right: 10%;
+height: 30px;
+background-color: #04B404;
+color: white;
+border: none;
+font-weight: bold;
+cursor: pointer;
+}
+
+/* FOOTER */
+
+footer{
+  width: 100%;
+  height: 220px;
+  background-color: #084B8A;
+  position: relative;
+  bottom: 0px;
+  display: flex;
+}
+
+footer div{
+  margin: 50px 115px ;
+  color: white;
+}
+
+.pagamentos h3{
+  width: 220px;
+  text-align: center;
+}
+
+.pag{
+display: flex;
+margin-top: 10px;
+margin-left: 20px;
+}
+
+.pag img{
+margin: 10px;
+width: 40px;
+}
+
+.contatos h3{
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.seguro p{
+  width: 80px;
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+}
+
+/* Fale conosco */
+
+.fale{
+  position: fixed;
+  bottom: 37px;
+  right: 20px;
+  display: flex;
+  margin-right: -100px;
+  transition-duration: 0.9s;
+}
+
+.fl{
+  width: 40px;
+  height: 40px;
+  border-radius: 45%;
+  background: white url(img/faleconosco.png) 50% 50% no-repeat;
+  background-size: 40px;
+  cursor: pointer;
+}
+
+.fale:hover{
+  margin-right: 0;
+  transition-duration: 0.9s;
+}
+
+.fale:hover input{
+  opacity: 1;
+  transition-duration: 0.3s;
+}
+
+.fale:hover .fl{
+  width: 43px;
+  border-radius: 20px 0px 0px 20px;
+  transition-duration: 0.3s;
+}
+
+.fale input{
+  width: 100px;
+  height: 40px;
+  border-radius: 0px 20px 20px 0px;
+  border: 2px solid white;
+  background-color: white;
+  opacity: 0;
+  outline: none;
+  cursor: pointer;
+}

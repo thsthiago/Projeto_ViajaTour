@@ -1,0 +1,5 @@
+nome hotel: Brisa Tower
+maceio hotel: https://www.pexels.com/pt-br/foto/chale-imobiliaria-imoveis-luzes-32870/
+quarto: https://pixabay.com/pt/photos/sala-apartamento-m%C3%B3veis-casa-2269594/
+sala: https://pixabay.com/pt/photos/sala-de-estar-comodidades-ao-vivo-728732/
+maceio praia: https://pixabay.com/pt/photos/macei%C3%B3-praias-brasileiras-alagoas-2072573/

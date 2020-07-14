@@ -1,0 +1,7 @@
+nome hotel: mandalay bay
+las vegas hotel: https://www.pexels.com/pt-br/foto/arquitetura-construcao-dubai-edificio-70441/
+las vegas: https://pixabay.com/pt/photos/arquitetura-las-vegas-torre-eiffel-1846684/
+las vegas alimentação: https://pixabay.com/pt/photos/arquitetura-bar-constru%C3%A7%C3%A3o-cadeiras-1837150/
+las vegas quarto: https://pixabay.com/pt/photos/painel-de-parede-quarto-apartamento-416041/
+las vegas sala: https://pixabay.com/pt/photos/cozinha-home-im%C3%B3veis-sala-de-estar-2486092/
+las vegas piscina: https://pixabay.com/pt/photos/bar-da-piscina-bar-piscina-3652849/

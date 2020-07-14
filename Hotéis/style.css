@@ -1,0 +1,980 @@
+/*CSS DA PÁGINA*/
+
+/* NAVBAR */
+
+*  {
+  margin:0;
+  padding:0;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+html, body {
+  height:100%;
+  width:100%;
+  background-color: #CECEF6;
+}
+
+header{
+  height: 160px;
+  position: relative;
+}
+
+.logo img{
+  width: 140px;
+  margin-top: -20px;
+  margin-bottom: -20px;
+}
+
+.home{
+  background-color: #084B8A;
+  height: 60px;
+  margin-top: -10px;
+}
+
+.home li{
+  margin: 20px 20px;
+  font-weight: bold;
+  list-style-type: none;
+}
+.home a{ 
+  text-decoration: none;
+  color: #BDBDBD;
+  font-size: 14px;
+  transition-duration: 0.3s;
+}
+
+.menu{
+  display: flex;
+  margin-left: 20px;
+}
+
+.area{
+  transition-duration: 0.4s;
+  display: flex;
+  margin-left: 120px;
+}
+
+.area a{
+  text-decoration: underline;
+  margin-right: 30px;
+}
+
+.area .butto{
+  width: 90px;
+  height: 40px;
+  margin-top: 10px;
+  background-color: white;
+  transition-duration: 0.9s;
+  color: #084B8A;
+  border-radius: 29px;
+  border: 2px solid white;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+}
+
+.butto:hover{
+  border: 2px solid white;
+  background-color: #084B8A;
+  color: white;
+  font-weight: bold;
+  transition-duration: 0.6s;
+}
+
+.home li:hover a{    
+  color: white;  
+  transition-duration: 0.3s;
+}
+
+/* SIMULADOR */
+
+#simulador form{
+  border-radius: 10px;
+  background-color: #2E2E2E;
+  opacity: 0.8;
+  width: 1050px;
+  height: 90px ;
+  margin: 0px auto ; 
+  margin-top: 40px;
+  box-shadow: 10px 10px -10px rgba(1, 1,0,0.9);
+  padding-top: 10px;
+  display: flex;
+  color: white;
+  font-weight: bold;
+}
+
+#tama{
+  margin-top: 5px;
+  width: 190px;
+  height: 45px;
+  border-radius: 11px;
+  border: 0;
+  outline: none;
+  padding: 0px 15px;
+  border: 3px solid black;
+}
+
+#destino{
+  margin-left: 20px; 
+  margin-right: 60px;
+}
+
+#data{
+  margin-left: 5px;
+}
+
+#data input{
+  margin-top: 5px;
+  width: 140px;
+  height: 45px;
+  border-radius: 11px;
+  border: 0;
+  outline: none;
+}
+
+#data input[type=date]{
+  text-align: center;
+  background: white url(img/calendar.png) 94% 50% no-repeat;
+  font-size: 15px;
+  border: 2px solid black;
+}
+
+#data input::-webkit-inner-spin-button {
+  display: none;
+}
+
+#data input::-webkit-calendar-picker-indicator{
+  width: 22px;
+  height: 22px;
+  opacity: 0;
+}
+
+#pessoas{
+  margin-left: 30px;
+}
+
+#pessoas input{
+  margin-top: 5px;
+  padding: 0px 20px;
+  width: 40px;
+  height: 45px;
+  border-radius: 10px;
+  border: 2px solid black; 
+  outline: none;
+}
+
+#pessoas input::-webkit-inner-spin-button {
+  height: 40px;
+}
+
+#criancas{
+  margin-left: 5px;
+}
+
+#criancas input{
+  margin-top: 5px;
+  padding: 0px 20px;
+  width: 40px;
+  height: 45px;
+  border-radius: 10px;
+  border: 2px solid black; 
+  outline: none;
+}
+
+#criancas input::-webkit-inner-spin-button {
+  height: 40px;
+  color: #084B8A;
+}
+
+#botao{
+  margin-top: 25px;
+  margin-left: 65px;
+}
+
+#botao input{
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
+  border: 0;
+  outline: none;
+  font-weight: bold;
+  background-color: white;
+  border: 3px solid black;
+  transition-duration: 0.3s;
+}
+
+#botao input:hover{
+  transition-duration: 0.3s;
+  background-color: black;
+  border: 2px solid black;
+  color: white;
+}
+
+/* AREA DE CONTEUDO */
+
+#cont{
+  height: 480px;
+  margin: 40px 10px;
+  display: flex;
+  border-radius: 15px;
+}
+
+.hote{
+  height: 400px;
+  width: 330px;
+  margin: 40px 50px;
+  background-color: white;
+  border: 2px solid #2E2E2E;
+}
+
+.hote:hover{
+  box-shadow: 10px 10px 60px rgba(1,1,1,0.2);
+}
+
+.imgf {
+  height: 220px;
+  background: white url(img/imghoteis/Dubai/Dubai\ Hotel.jpg) no-repeat;
+  background-size: 340px 220px;
+  background-position: center;
+  transition-duration: 0.8s;
+  opacity: 0.9;
+}
+
+.hote:hover .imgf{
+  background-size: 380px 250px;
+  transition-duration: 0.8s;
+  opacity: 1;
+}
+
+.desc{
+  margin-top: 10px;
+  margin-left: 15px;
+}
+
+.titus{
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.estrelas{
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.estrelas img{
+  width: 17px;
+}
+
+.cont4{
+  margin-left: 10px;
+  display: flex;
+  width: 100px;
+}
+
+.cont4 p{
+  margin-right: 5px;
+}
+
+.desc button{
+  width: 130px;
+  height: 40px;
+  margin-left: 140px;
+  margin-top: -90px;
+  outline: none;
+  cursor: pointer;
+  background-color: #2E2E2E;
+  opacity: 0.8;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  opacity: 0.9s;
+}
+
+.desc button:hover{
+  opacity: 1;
+}
+
+.imgf1{
+  height: 220px;
+  background: white url(img/imghoteis/Lasvegas/Hotel\ las\ vegas.jpg) no-repeat;
+  background-size: 340px 220px;
+  background-position: center;
+  transition-duration: 0.8s;
+  opacity: 0.9;
+}
+
+.hote:hover .imgf1{
+  background-size: 380px 250px;
+  transition-duration: 0.8s;
+  opacity: 1;
+}
+
+.imgf2{
+  height: 220px;
+  background: white url(img/imghoteis/maceió/hotel\ em\ maceio.jpg) no-repeat;
+  background-size: 340px 220px;
+  background-position: center;
+  transition-duration: 0.8s;
+  opacity: 0.9;
+}
+
+.hote:hover .imgf2{
+  background-size: 380px 250px;
+  transition-duration: 0.8s;
+  opacity: 1;
+}
+
+.imgf3{
+  height: 220px;
+  background: white url(img/imghoteis/Pernanbuco/Hotel.jpg) no-repeat;
+  background-size: 340px 220px;
+  background-position: center;
+  transition-duration: 0.8s;
+  opacity: 0.9;
+}
+
+.hote:hover .imgf3{
+  background-size: 380px 250px;
+  transition-duration: 0.8s;
+  opacity: 1;
+}
+
+.imgf4{
+  height: 220px;
+  background: white url(img/imghoteis/Portodegalinhas/Porto\ de\ galinhas\ hotel.jpg) no-repeat;
+  background-size: 340px 220px;
+  background-position: center;
+  transition-duration: 0.8s;
+  opacity: 0.9;
+} 
+
+.hote:hover .imgf4{
+  background-size: 380px 250px;
+  transition-duration: 0.8s;
+  opacity: 1;
+}
+
+.imgf5{
+  height: 220px;
+  background: white url(img/imghoteis/Salvador/salvador\ hotel.jpg) no-repeat;
+  background-size: 340px 220px;
+  background-position: center;
+  transition-duration: 0.8s;
+  opacity: 0.9;
+}
+
+.hote:hover .imgf5{
+  background-size: 380px 250px;
+  transition-duration: 0.8s;
+  opacity: 1;
+}
+
+#cont2{
+  height: 450px;
+  margin-top: 40px;
+  margin-bottom:40px;
+  background: white url(https://cdn.pixabay.com/photo/2020/04/30/14/03/mountains-and-hills-5112952_960_720.jpg) no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: 1450px 880px;
+  display: flex;
+}
+
+.hote2{
+  width: 570px;
+  height: 400px;
+  background-color: white;
+  margin: 20px 25px;
+  border-radius: 10px;
+  border: 2px solid #2E2E2E;
+}
+
+.hote2 img{
+  width: 570px;
+  height: 300px;
+  border-radius: 8px 8px 0px 0px;
+}
+
+.desc2{
+  display: flex;
+  margin-left: 10px;
+}
+
+.desc2 .p1{
+  margin-top: 15px;
+  margin-left: 30px;
+}
+
+.desc2 button{
+  width: 140px;
+  height: 40px;
+  margin-top: 25px;
+  margin-left: 110px;
+  outline: none;
+  cursor: pointer;
+  background-color: #2E2E2E;
+  opacity: 0.8;
+  color: white;
+  border: 0px;
+  border-radius: 10px;
+}
+
+.desc2 button:hover{
+  opacity: 1;
+}
+
+.cont5{
+  display: flex;
+  margin-top: 5px;
+  margin-left: 50px;
+}
+
+.cont5 p{
+  margin-right: 5px;
+}
+
+.estrelas2{
+  display: flex;
+}
+
+.estrelas2 img{
+  width: 17px;
+  height: 17px;
+}
+
+/* GALERIA */
+
+/* G1 */
+.galeria{
+  height: 500px;
+  margin: 40px 40px;
+  border-radius: 15px;
+  display: flex;
+}
+
+.gimgs{
+  margin-top: 25px;
+  margin-left: 20px;
+  width: 600px;
+  height: 410px;
+  background-color: white;
+  border-radius: 15px 0px 0px 15px;
+  border: 2px solid black;
+  border-right: none;
+}
+
+.img{
+  display: flex;
+}
+
+.hotel{
+  width: 200px;
+  height: 150px;
+  margin: 5px 5px;
+  border-radius: 15px 0px 0px 0px;
+  transition-duration: 0.9s;
+}
+
+.quarto{
+  width: 380px;
+  height: 245px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+}
+
+.img2{
+  display: flex;
+}
+
+.praia{
+  width: 200px;
+  height: 240px;
+  margin-top: -95px;
+  margin-left: 3px;
+  margin-right: 5px;
+  margin-bottom: 3px;
+  border-radius: 0px 0px 0px 15px;
+}
+
+.sala{
+  width: 190px;
+  height: 150px;
+  margin-right: 5px;
+}
+
+.piscina{
+  width: 190px;
+  height: 150px;
+}
+
+.gdesc{
+  margin-top: 25px;
+  margin-right: 25px;
+  width: 700px;
+  height: 410px;
+  background-color: white;
+  border-radius: 0px 15px 15px 0px;
+  border: 2px solid black;
+  border-left: none;
+}
+
+/* G2 */
+
+.imgvegas{
+  display: flex;
+}
+
+.vimgs{
+  margin-top: 25px;
+  margin-right: 20px;
+  width: 600px;
+  height: 410px;
+  background-color: white;
+  border-radius: 0px 15px 15px 0px;
+  border: 2px solid black;
+  border-left: none;
+}
+
+.vhotel{
+  width: 220px;
+  height: 170px;
+  margin: 5px 5px;
+  transition-duration: 0.9s;
+}
+
+.vquarto{
+  width: 365px;
+  height: 255px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  border-radius: 0px 15px 0px 0px;
+}
+
+.imgvegas2{
+  display: flex;
+}
+
+.valimentacao{
+  width: 222px;
+  height: 222px;
+  margin-top: -83px;
+  margin-left: 3px;
+  margin-right: 5px;
+  margin-bottom: 3px;
+}
+
+.vsala{
+  width: 185px;
+  height: 140px;
+  margin-right: 5px;
+  margin-left: 5px;
+  border-radius: 0px 0px 15px 0px;
+}
+
+.vpiscina{
+  width: 175px;
+  height: 140px;
+}
+
+.vdesc{
+  margin-top: 25px;
+  margin-left: 20px;
+  width: 700px;
+  height: 410px;
+  background-color: white;
+  border-radius: 15px 0px 0px 15px;
+  border: 2px solid black;
+  border-right: none;
+}
+
+.dpiscina{
+  width: 218px;
+  height: 150px;
+}
+
+/* G3 */
+
+.quarto3{
+  width: 385px;
+  height: 200px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+}
+
+.sala3{
+  width: 385px;
+  height: 195px;
+  margin-right: 5px;
+}
+
+.praia3{
+  width: 203px;
+  height: 245px;
+  margin-top: -50px;
+  margin-left: 3px;
+  margin-right: 5px;
+  margin-bottom: 3px;
+  border-radius: 0px 0px 0px 15px;
+}
+
+/* G4 */
+
+.rhotel{
+  width: 230px;
+  height: 200px;
+  margin: 5px 0px;
+  transition-duration: 0.9s;
+}
+
+.rquarto{
+  width: 325px;
+  height: 400px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  margin-left: 5px;
+  border-radius: 0px 15px 15px 0px;
+}
+
+.rsala{
+  width: 230px;
+  height: 195px;
+  margin-top: -200px;
+  margin-right: 5px;
+  margin-left: 0px;
+}
+
+/* G5 */
+
+.photel{
+  width: 250px;
+  height: 200px;
+  margin: 5px 5px;
+  border-radius: 15px 0px 0px 0px;
+  transition-duration: 0.9s;
+}
+
+.pquarto{
+  width: 335px;
+  height: 400px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+}
+
+.psala{
+  width: 250px;
+  height: 195px;
+  margin-top: -200px;
+  margin-right: 5px;
+  margin-left: 5px;
+  border-radius: 0px 0px 0px 15px;
+}
+
+/* G6 */
+
+.pehotel{
+  width: 270px;
+  height: 200px;
+  margin-top: 5px;
+  transition-duration: 0.9s;
+}
+
+.pequarto{
+  width: 320px;
+  height: 230px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  margin-left: 5px;
+  border-radius: 0px 15px 0px 0px;
+}
+
+.pesala{
+  width: 320px;
+  height: 165px;
+  margin-right: 5px;
+  margin-left: 5px;
+  border-radius: 0px 0px 15px 0px;
+}
+
+.pepiscina{
+  width: 270px;
+  height: 190px;
+  margin-top: -30px;
+}
+
+/* G7 */
+
+.pohotel{
+  width: 250px;
+  height: 200px;
+  margin: 5px 5px;
+  border-radius: 15px 0px 0px 0px;
+  transition-duration: 0.9s;
+}
+
+.poquarto{
+  width: 320px;
+  height: 225px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+}
+
+.posala{
+  width: 320px;
+  height: 170px;
+}
+
+.popraia{
+  width: 250px;
+  height: 195px;
+  margin-top: -25px;
+  margin-left: 5px;
+  border-radius: 0px 0px 0px 15px;
+}
+
+/* G8 */
+
+.shotel{
+  width: 240px;
+  height: 200px;
+  margin: 5px 0px;
+  transition-duration: 0.9s;
+}
+
+.squarto{
+  width: 350px;
+  height: 400px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  margin-left: 5px;
+  border-radius: 0px 15px 15px 0px;
+}
+
+.ssala{
+  width: 240px;
+  height: 195px;
+  margin-top: -200px;
+  margin-right: 5px;
+  margin-left: 0px;
+}
+
+/* INFOMAÇÕES */
+
+.gdesc h2{
+  margin: 5px 30px;
+}
+
+.gdesc h4{
+  margin: 10px;
+}
+
+#info{
+  display: flex;
+}
+
+.info1 img{
+  width: 12px;
+}
+
+.info2 img{
+  width: 12px;
+}
+
+#info h5{
+  margin: 8px 15px;
+  color: #1C1C1C;
+}
+
+#info p{
+  font-size: 12px; 
+  margin-left: 5px;
+  color: #424242;
+}
+
+.info2{
+  margin-left: 30px;
+}
+
+.info3{
+  width: 170px;
+  margin-left: 50px;
+}
+
+.info3 img{
+  width: 12px;
+}
+
+.info3 a{
+  text-decoration: none;
+}
+
+.info3 a:hover{
+  text-decoration: underline;
+}
+
+.info3 p{
+  margin-top: 3px;
+}
+
+.info3 button{
+  width: 130px;
+  height: 45px;
+  margin: 40px 0px;
+  margin-left: 10px;
+  font-size: 17px;
+  background-color: black;
+  color: white;
+  opacity: 0.8;
+  border-radius: 5px;
+  border: none;
+}
+
+.info3 button:hover{
+  opacity: 1;
+}
+
+.tl{
+  margin: 5px 30px;
+}
+
+.tl1{
+  margin: 10px;
+}
+
+/* FOOTER */
+
+footer{
+  width: 100%;
+  height: 220px;
+  background-color: #084B8A;
+  position: relative;
+  bottom: 0px;
+  display: flex;
+}
+
+footer div{
+  margin: 50px 90px ;
+  color: white;
+}
+
+.pagamentos h3{
+  width: 220px;
+  text-align: center;
+}
+
+.pag{
+  display: flex;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.pag img{
+  margin: 10px;
+  width: 40px;
+}
+
+.contatos h3{
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.contact{
+  display: flex;
+  width: 15px;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-bottom: 0px;
+}
+
+.contact img{
+  width: 15px;
+  margin-right: 7px;
+}
+
+.tele{
+  display: flex;
+  height: 15px;
+  margin-top: 10px;
+  margin-left: 10px;
+
+}
+
+.tele img{
+  width: 15px;
+  margin-top: 3px;
+  margin-right: 5px;
+}
+
+.seguro{
+  display: flex;
+  height: 20px;
+  margin: 0px;
+  position: absolute;
+  right: 10px;
+  bottom: 20px;
+}
+
+.seguro p{
+  margin-right: 5px;
+}
+
+.seguro img{
+  width: 20px;
+  height: 20px;
+}
+
+/* Fale conosco */
+
+.fale{
+  position: fixed;
+  bottom: 37px;
+  right: 20px;
+  display: flex;
+  margin-right: -100px;
+  transition-duration: 0.9s;
+}
+
+.fl{
+  width: 40px;
+  height: 40px;
+  border-radius: 45%;
+  background: white url(img/faleconosco.png) 50% 50% no-repeat;
+  background-size: 40px;
+  cursor: pointer;
+}
+
+.fale:hover{
+  margin-right: 0;
+  transition-duration: 0.9s;
+}
+
+.fale:hover input{
+  opacity: 1;
+  transition-duration: 0.3s;
+}
+
+.fale:hover .fl{
+  width: 43px;
+  border-radius: 20px 0px 0px 20px;
+  transition-duration: 0.3s;
+}
+
+.fale input{
+  width: 100px;
+  height: 40px;
+  border-radius: 0px 20px 20px 0px;
+  border: 2px solid white;
+  background-color: white;
+  opacity: 0;
+  outline: none;
+  cursor: pointer;
+}
