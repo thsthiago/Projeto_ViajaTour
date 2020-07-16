@@ -459,6 +459,300 @@ header #nav-mobile ul li a:hover{
   background-color: black;
 }
 
+#hoteis{
+  padding: 20px;
+  width: 100%;
+  background-color: royalblue;
+  border-radius: 20px 0px 20px 0px;
+}
+
+#hoteis .flex .ho-box{
+  width: 30%;
+  height: 190px;
+  background-color: white;
+  border-radius: 10px;
+  position: relative;
+  margin: 0 1.6%;
+}
+
+#hoteis .flex .ho-box .no-flex{
+  height: 100%;
+  width: 100%;
+  flex-wrap: nowrap;
+}
+
+#hoteis .flex .ho-box .flex-desc{
+  width: auto;
+  flex-wrap: nowrap;
+}
+
+#hoteis .flex .ho-box img{
+  width: 60%;
+  height: 100%;
+  border-radius: 10px 0px 0px 10px;
+  transition: width .7s;
+}
+
+#hoteis .flex .ho-box:hover img{
+  width: 50%;
+}
+
+#hoteis .flex .ho-box .ho-desc{
+  padding: 10px;
+}
+
+#hoteis .flex .ho-box .ho-desc h1{
+  font-size: 23px;
+}
+
+#hoteis .flex .ho-box .ho-desc h2{
+  margin-left: 20px;
+}
+
+#hoteis .flex .ho-box .ho-desc2{
+  display: none;
+  opacity: 0;
+  transition: all .7s;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+#hoteis .flex .ho-box .ho-desc2 h3,
+#hoteis .flex .ho-box .ho-desc2 p{
+  font-size: 15px;
+}
+
+#hoteis .flex .ho-box:hover .ho-desc2{
+  opacity: 1;
+  display: block;
+}
+
+#hoteis .flex .ho-box button{
+  padding: 8px 10px;
+  border: none;
+  background-color: rgba(0,0,0,.7);
+  border-radius: 5px;
+  color: white;
+  margin: 10px auto;
+  display: block;
+  cursor: pointer;
+  transition: background-color .5s;
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  transition: right .7s;
+}
+
+#hoteis .flex .ho-box button:hover{
+  background-color: black;
+}
+
+#hoteis .flex .ho-box:hover button{
+  right: 40px;
+}
+
+footer{
+  width: 100%;
+  background-color: var(--pricipal-color);
+  margin-top: 40px;
+  color: white;
+  padding: 60px 0;
+  position: relative;
+}
+
+footer .flex{
+}
+
+footer .flex .footer-box{
+  text-align: center;
+  margin: 0 8%;
+}
+
+footer .flex .footer-box img{
+  width: 40px;
+  margin: 0 10px;
+}
+
+footer .flex .footer-box h1{
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+footer .flex .footer-box h3{
+  text-align: left;
+  font-weight: normal;
+  font-size: 17px;
+  margin-bottom: 5px;
+}
+
+footer .flex .footer-box h3 img{
+  width: 15px;
+  margin-right: 5px;
+}
+
+footer .flex .seguro{
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 17px;
+  font-weight: normal;
+}
+
+footer .flex .seguro img{
+  width: 18px;
+  margin-left: 4px;
+  margin-bottom: -2px;
+}
+
+/* Carros */
+
+#carros{
+  background-color: #9F81F7;
+  padding: 20px;
+  width: 100%;
+  margin: 30px 0;
+  border-radius: 20px;
+  box-shadow: inset 0px 0px 293px -121px rgba(0,0,0,0.2);
+}
+
+#carros .flex{
+  flex-wrap: nowrap;
+}
+
+#carros .flex h1{
+  width: 30%;
+  color: white;
+  font-size: 35px;
+  text-shadow: 2px 2px 3px black;
+}
+
+#carros .flex .ca-box{
+  width: 24%;
+  margin: 0 1%;
+  border-radius: 15px;
+}
+
+#carros .flex .ca-box:hover{
+  box-shadow: 3px 3px 10px rgba(0,0,0,0.3);
+}
+
+#carros .flex .ca-box a{
+  text-decoration: none;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#carros .flex .ca-box img{
+  width: 100%;
+  height: 75%;
+  border-radius: 15px 15px 0px 0px;
+  box-shadow: -5px -5px -5px rgba(0,0,0,0.63);
+}
+
+#carros .flex .ca-box h1{
+  text-shadow: none;
+  font-size: 22px;
+  width: 100%;
+  height: 25%;
+  text-align: center;
+  padding: 10px;;
+  background-color: black;
+  margin: 0;
+  border-radius: 0px 0px 15px 15px;
+}
+
+#cruzeiro{
+  padding: 30px;
+  background-color: royalblue;
+  border-radius: 20px 0px 20px 0px;
+  width: 100%;
+}
+
+#cruzeiro .flex .cru-box{
+  width: 23%;
+  margin: 0 1%;
+  background-color: white;
+  border: 1px solid black;
+}
+
+#cruzeiro .flex .cru-box:hover{
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.63);
+}
+
+#cruzeiro .flex .cru-box .cru-img{
+  height: 170px;
+  transition: background-size .7s;
+}
+
+#cruzeiro .flex .cru-box .argentina{
+  background: url('img/cruzeiros/c1.jpeg') no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+}
+
+#cruzeiro .flex .cru-box .florianopolis{
+  background: url('img/cruzeiros/c2.jpeg') no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+}
+
+#cruzeiro .flex .cru-box .cabo-frio{
+  background: url('img/cruzeiros/c3.jpeg') no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+}
+
+#cruzeiro .flex .cru-box .buzios{
+  background: url('img/cruzeiros/c4.jpeg') no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+}
+
+#cruzeiro .flex .cru-box:hover .cru-img{
+  background-size: 120% 120%;
+}
+
+#cruzeiro .flex .cru-box .cru-desc{
+  padding: 10px;
+}
+
+#cruzeiro .flex .cru-box .cru-desc h1{
+  font-size: 22px;
+}
+
+#cruzeiro .flex .cru-box .cru-desc .preco{
+  margin: 5px 0;
+}
+
+#cruzeiro .flex .cru-box .cru-desc .preco h1{
+  font-size: 30px;
+  margin-left: 5px;
+}
+
+#cruzeiro .flex .cru-box button{
+  padding: 8px 10px;
+  border: none;
+  background-color: rgba(0,0,0,.7);
+  border-radius: 5px;
+  color: white;
+  margin: 10px auto;
+  display: block;
+  cursor: pointer;
+  transition: background-color .5s;
+}
+
+#cruzeiro .flex .cru-box button:hover{
+  background-color: black;
+}
+
+
+
+
+
+
+
 /* Responsive */
 
 @media screen and (max-width: 1011px){
