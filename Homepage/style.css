@@ -539,7 +539,7 @@ header #nav-mobile ul li a:hover{
   transition: background-color .5s;
   position: absolute;
   bottom: 10px;
-  right: 20px;
+  right: 15px;
   transition: right .7s;
 }
 
@@ -558,9 +558,6 @@ footer{
   color: white;
   padding: 60px 0;
   position: relative;
-}
-
-footer .flex{
 }
 
 footer .flex .footer-box{
@@ -594,7 +591,7 @@ footer .flex .seguro{
   position: absolute;
   bottom: 10px;
   right: 10px;
-  font-size: 17px;
+  font-size: 14px;
   font-weight: normal;
 }
 
@@ -747,12 +744,6 @@ footer .flex .seguro img{
   background-color: black;
 }
 
-
-
-
-
-
-
 /* Responsive */
 
 @media screen and (max-width: 1011px){
@@ -785,6 +776,10 @@ footer .flex .seguro img{
     margin-left: 10%;
   }
 
+  #pacotes{
+    margin-bottom: 60px;
+  }
+
   #pacotes .flex .pa-titulo{ 
     width: 100%;
     font-size: 40px;
@@ -794,6 +789,57 @@ footer .flex .seguro img{
 
   #pacotes .flex .pa-box{
     width: 30%;
+  }
+  
+  #hoteis .flex .ho-box{
+    width: 31%;
+    margin: 0 1%;
+  }
+  
+  #hoteis .flex .ho-box:hover img{
+    width: 60%;
+  }
+  
+  #hoteis .flex .ho-box:hover .ho-desc2{
+    opacity: 0;
+    display: none;
+  }
+  
+  #hoteis .flex .ho-box button{
+    right: 5px;
+    padding: 8px;
+  }
+
+  #hoteis .flex .ho-box:hover button{
+    right: 5px;
+  }
+  
+  #carros .flex{
+    flex-wrap: wrap;
+  }
+  
+  #carros .flex h1{
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  
+  #carros .flex .ca-box{
+    width: 30%;
+    margin: 0 1.6%;
+  }
+
+  footer .flex .footer-box{
+    margin: 0 6%;
+  }
+
+  footer .flex .footer-box h1{
+    font-size: 20px;
+  }
+  
+  footer .flex .footer-box h3{
+    font-size: 16px;
   }
 }
 
@@ -823,6 +869,55 @@ footer .flex .seguro img{
     margin: 5%;
   }
 
+  #pacotes{
+    margin-bottom: 40px;
+    height: auto;
+  }
+
+  #pacotes .flex{
+    justify-content: center;
+  }
+
+  #pacotes .flex .pa-box{
+    width: 35%;
+    margin: 40px;
+  }
+
+  #pacotes .flex .pa-box:hover{
+    height: 340px;
+  }
+
+  #pacotes .flex .pa-box:hover .lorem{
+    visibility: hidden;
+    height: 0;
+    opacity: 0;
+  }
+
+  #hoteis .flex{
+    justify-content: center;
+  }
+
+  #hoteis .no-flex{
+    justify-content: initial;
+  }
+
+  #hoteis .flex .ho-box{
+    width: 45%;
+    margin: 20px 2%;
+  }
+
+  #carros .flex h1{
+    font-size: 25px;
+  }
+
+  #cruzeiro .flex .cru-box{
+    width: 40%;
+    margin: 30px  auto;
+  }
+
+  footer .flex .footer-box{
+    margin: 0 auto;
+  }
 }
 
 @media screen and (max-width: 693px) {
@@ -840,9 +935,62 @@ footer .flex .seguro img{
     margin: 0;
   }
 
+  #pacotes .flex .pa-titulo{
+    font-size: 30px;
+  }
+
   #passagens .flex .p-box{
     width: 60%;
     margin: 30px auto;
+  }
+
+  #pacotes .flex .pa-box{
+    width: 60%;
+    margin: 40px 10px;
+  }
+
+  #hoteis .flex .ho-box{
+    width: 80%;
+    margin: 30px 0;
+  }
+
+  #hoteis .flex .ho-box button{
+    right: 30px;
+  }
+
+  #hoteis .flex .ho-box:hover button{
+    right: 30px;
+  }
+
+  #carros .flex .ca-box h1{
+    font-size: 18px;
+  }
+
+  #carros .flex h1{
+    font-size: 22px;
+  }
+
+  #cruzeiro .flex .cru-box{
+    width: 45%;
+    margin: 30px  auto;
+  }
+
+  footer{
+    padding: 30px 0;
+  }
+
+  footer .flex .footer-box{
+    width: 100%;
+    margin: 20px auto;
+  }
+
+  footer .flex .footer-box h1{
+    font-size: 20px;
+  }
+  
+  footer .flex .footer-box h3{
+    text-align: center;
+    margin: 7px 0;
   }
 }
 
@@ -875,5 +1023,33 @@ footer .flex .seguro img{
   #passagens .flex .p-box{
     width: 90%;
     margin: 30px auto;
+  }
+
+  #pacotes .flex .pa-box{
+    width: 80%;
+    margin: 40px 10px;
+  }
+
+  #hoteis .flex .ho-box{
+    width: 90%;
+    margin: 30px 0;
+  }
+
+  #hoteis .flex .ho-box button{
+    right: 15px;
+  }
+
+  #hoteis .flex .ho-box:hover button{
+    right: 15px;
+  }
+
+  #carros .flex .ca-box{
+    width: 70%;
+    margin: 20px auto;
+  }
+
+  #cruzeiro .flex .cru-box{
+    width: 80%;
+    margin: 30px  auto;
   }
 }
