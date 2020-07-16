@@ -1,348 +1,194 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Thiago Cabral">
         <title>Home</title>
         <link href="style.css" type="text/css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/e796b83976.js" crossorigin="anonymous"></script>
     </head>
-
     <body>
-        <div class="pagina">
+        <main id="main">
             <header>
-                <div class="logo">
-                    <a href="#"><img src="img/logoviajatour.png"></a>
-                </div><!--Logo-->
-                <nav class="home">
-                    <ul class="menu">
-                        <li><a href="">Passagens</a></li>
-                        <li><a href="">Hotéis</a></li>
-                        <li><a href="">Cruzeiros</a></li>
-                        <li><a href="">Aluguel de Carros</a></li>
-                        <li><a href="">Pacotes de Viagens</a></li>
-                        <li><a href="">Dicas de Vigens</a></li>
-                        <div class="area">
-                            <li><a href="">Faça o seu cadastro</a></li>
-                            <button class="butto" href="login">Login</button>
-                        </div><!--Area administrativa-->
-                    </ul><!--menu-->
-                </nav><!--home-->
-            </header><!--cabecalho-->
+                <div class="center logo">
+                    <a href="index.html"><img src="img/logoviajatour.png" alt="Logo ViajaTour"></a>
+                </div><!--center-->
+                <nav id="nav-desktop">
+                    <div class="center">
+                        <ul>
+                            <li><a href="#">Passagens</a></li>
+                            <li><a href="#">Hotéis</a></li>
+                            <li><a href="#">Cruzeiros</a></li>
+                            <li><a href="#">Aluguel de Carros</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">Faça o seu cadastro</a></li>
+                            <li><a href="#">Login</a></li>
+                        </ul>
+                    </div><!--center-->
+                </nav>
+                <nav id="nav-mobile">
+                    <i class="fas fa-bars"></i>
+                    <ul>
+                        <li><a href="#">Passagens</a></li>
+                        <li><a href="#">Hotéis</a></li>
+                        <li><a href="#">Cruzeiros</a></li>
+                        <li><a href="#">Aluguel de Carros</a></li>
+                        <li><a href="#">Faça o seu cadastro</a></li>
+                        <li><a href="#">Login</a></li>
+                    </ul>
+                </nav>
+            </header>
 
-            <div id="simulador">
-                    <form >
-                    
-                        <h1 class="titulo">Os melhores pacotes para suas férias!</h1>
-                       
-                        <div id="origem">
-                            <label>Origem</label> <br>
-                            <input placeholder="Local de saída" type="text" id="tama" required> 
-                        </div>
-                        
-                        <div id="destino">
-                            <label></label>Destino</label> <br>
-                            <input placeholder="Para onde deseja ir" type="text" id="tama" required> 
-                        </div>
-            
-                        <div id="data">
-                            <label class="font">Data</label> <br>
-                            <input type="date" required>  
-                        </div>
+            <div class="center">
+                <section id="simulador">
+                    <h1>Os melhores pacotes para suas férias!</h1>                    
+                    <form>
+                        <div class="w50">
+                            <label for="origem">Origem</label>
+                            <input type="text" name="origem" placeholder="Local de saída" required>
+                        </div><!--w50-->
 
-                        <div id="pessoas">
-                            <label for="quantidade">Pessoas</label>
-                            <br>
-                            <input type="number" min="1" max="8" for="quantidade" required>
-                        </div>
-            
-                        <div id="botao">
-                           <input type="submit" value="Procurar pacotes">
-                        </div>
-                    
+                        <div class="w50">
+                            <label for="destino">Destino</label>
+                            <input type="text" name="destino" placeholder="Para onde deseja ir?" required>
+                        </div><!--w50-->
+
+                        <div class="date">
+                            <label for="data">Data</label>
+                            <input type="date" name="data" min="2020-07-20" required>
+                        </div><!--date-->
+
+                        <div class="pessoas">
+                            <label for="pessoas">Pessoas</label>
+                            <input type="number" name="pessoas" min="1" max="8" required>
+                        </div><!--pessoas-->
+
+                        <div class="w50 procurar">
+                            <button type="submit">Procurar pacotes</button>
+                        </div><!--w50-->
                     </form>
-            
-            </div>   
+                </section>
+            </div><!--center-->
 
-            <div id="conteudo">   
+            <div class="center">
+                <section id="passagens">
+                    <div class="flex">
 
-                <div class="margin" id="passagens">
-                    <div class="pelement">
-                        <div class="imgss">
-                            
-                        </div>
-                        <p class="titus">Dubai</p>
-                        <p>Preço</p>
-                        <div class="cont">    
-                            <p>R$</p>
-                            <h4>200</h4>
-                        </div>
-                        <button href="#">teste</button>
-                    </div>
-                    <div class="pelement">
-                        <div class="imgss1">
-
-                        </div>
-                        <p class="titus">Nova York</p>
-                        <p>Preço</p>
-                        <div class="cont">    
-                            <p>R$</p>
-                            <h4>200</h4>
-                        </div>
-                        <button href="#">Ver detalhes</button>
-                    </div>
-                    <div class="pelement">
-                        <div class="imgss2">
-                            
-                        </div>
-                        <p class="titus">Salvador</p>
-                        <p>Preço</p>
-                        <div class="cont">    
-                            <p>R$</p>
-                            <h4>200</h4>
-                        </div>
-                        <button href="#">Ver detalhes</button>
-                    </div>
-                    <div class="pelement">
-                        <div class="imgss3">
-                            
-                        </div>
-                        <p class="titus">Maceió</p>
-                        <p>Preço</p>
-                        <div class="cont">    
-                            <p>R$</p>
-                            <h4>200</h4>
-                        </div>
-                        <button href="#">Ver detalhes</button>
-                    </div>
-                </div>
-
-                <div class="margin" id="pacotes">
-                    <h1>Veja alguns dos nossos melhores pacotes!</h1>
-                    <div class="element">    
-                        <img class="imgs2" src="img/pacotes/p1.jpg">
-                        <p class="titu">Balneária</p>
-                        <p class="test2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                            Lorem Ipsumandard dummy text ever</p>
-                        <p>Preço</p>
-                        <div class="valor">    
-                            <p>R$</p>
-                            <h4>200</h4>
-                        </div>
-                        <button class="buttons1" href="#">Ver detalhes</button>
-                    </div>
-                    
-                    <div class="element">    
-                        <img class="imgs2" src="img/pacotes/p2.jpg">
-                        <p class="titu">Niagara</p>
-                        <p class="test2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                            Lorem Ipsumandard dummy text ever</p>
-                        <p>Preço</p>
-                        <div class="valor">    
-                            <p>R$</p>
-                            <h4>200</h4>
-                        </div>
-                        <button class="buttons1" href="#">Ver detalhes</button>
-                    </div>
-                    
-                    <div class="element">    
-                        <img class="imgs2" src="img/pacotes/p3.jpg">
-                        <p class="titu">Paris</p>
-                        <p class="test2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                            Lorem Ipsumandard dummy text ever</p>
-                        <p>Preço</p>
-                        <div class="valor">    
-                            <p>R$</p>
-                            <h4>200</h4>
-                        </div>
-                        <button class="buttons1" href="#">Ver detalhes</button>
-                    </div>
-                </div>
-                
-                <div class="margin" id="hoteis">
-                    <div class="element3" id="dubai">
-                        <img class="imgs" src="img/hoteis/Dubai Piscina.jpg">
-                        <div class="cont">
-                            <div class="desc">  
-                                <h3>Dubai</h3>
+                        <div class="p-box">
+                            <div class="p-img dubai"></div>
+                            <div class="p-desc">
+                                <h1>Dubai</h1>
                                 <p>Preço</p>
-                                <div class="valor">
+                                <div class="flex preco">
                                     <p>R$</p>
-                                    <h4>200</h4>
-                                </div>
-                                <button href="#">Ver detalhes</button>
-                            </div>
-                            <div class="desc2">
-                                <p class="de">Descrição</p>
-                                <P>Suites: 3</P>
-                                <p>Wifi grátis</p>
-                                <p>café da manhã</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="element3" id="salvador">
-                        <img class="imgs" src="img/hoteis/Porto de galinhas hotel.jpg">
-                        <div class="cont">
-                            <div class="desc">  
-                                <h3>Salvador</h3>
+                                    <h1>200</h1>
+                                </div><!--flex-->
+                            </div><!--p-desc-->
+                            <button>Ver detalhes</button>
+                        </div><!--p-box-->
+
+                        <div class="p-box">
+                            <div class="p-img nova"></div>
+                            <div class="p-desc">
+                                <h1>Nova York</h1>
                                 <p>Preço</p>
-                                <div class="valor">
+                                <div class="flex preco">
                                     <p>R$</p>
-                                    <h4>200</h4>
-                                </div>
-                                <button href="#">Ver detalhes</button>
-                            </div>
-                            <div class="desc2">
-                                <p class="de">Descrição</p>
-                                <P>Suites: 3</P>
-                                <p>Wifi grátis</p>
-                                <p>café da manhã</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="element3" id="maceio">
-                        <img class="imgs" src="img/hoteis/hotel em maceio.jpg">
-                        <div class="cont">
-                            <div class="desc">  
-                                <h3>Maceió</h3>
+                                    <h1>200</h1>
+                                </div><!--flex-->
+                            </div><!--p-desc-->
+                            <button>Ver detalhes</button>
+                        </div><!--p-box-->
+
+                        <div class="p-box">
+                            <div class="p-img salvador"></div>
+                            <div class="p-desc">
+                                <h1>Salvador</h1>
                                 <p>Preço</p>
-                                <div class="valor">
+                                <div class="flex preco">
                                     <p>R$</p>
-                                    <h4>200</h4>
-                                </div>
-                                <button href="#">Ver detalhes</button>
-                            </div>
-                            <div class="desc2">
-                                <p class="de">Descrição</p>
-                                <P>Suites: 3</P>
-                                <p>Wifi grátis</p>
-                                <p>café da manhã</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                                    <h1>200</h1>
+                                </div><!--flex-->
+                            </div><!--p-desc-->
+                            <button>Ver detalhes</button>
+                        </div><!--p-box-->
 
-                <a class="anun" href="#"><div class="margin" id="carros" href="#">
-                    <div class="anuncio">
-                        <h1>A ViajaTour conta com os melhores preços para alugar o seu carro,
-                            venha conferir!</h1>
-                    </div>
-                    <div class="caelement">
-                        <div class="cimgss1">
-                            <img src="img/carros/c1.jpeg">
-                        </div>
-                        <p class="titus">Aston Martin</p>
-                    </div>
-                    <div class="caelement">
-                        <div class="cimgss2">
-                            <img src="img/carros/c2.jpeg">
-                        </div>
-                        <p class="titus">BMW</p>
-                    </div>
-                    <div class="caelement">
-                        <div class="cimgss3">
-                            <img src="img/carros/c3.jpeg">
-                        </div>
-                        <p class="titus">Mercedes</p>
-                    </div>
-                </div></a>
-                
-                <div class="margin" id="cruzeiros">
-                    <div class="cmar">
-                        <div class="cimg1">
-                            
-                        </div>
-                        <h3>Argentina</h3>
-                        <div class="ccont">    
-                            <p>Destino</p>
-                            <p>Preço</p>
-                            <div class="valor">
-                                <p>R$</p>
-                                <h1>200</h1>
-                            </div>
-                        </div>
-                        <button href="#">teste</button>
-                    </div>
-                    <div class="cmar">
-                        <div class="cimg2">
-                            
-                        </div>
-                        <h3>Florianópolis</h3>
-                        <div class="ccont">    
-                            <p>Destino</p>
-                            <p>Preço</p>
-                            <div class="valor">
-                                <p>R$</p>
-                                <h1>200</h1>
-                            </div>
-                        </div>
-                        <button href="#">teste</button>
-                    </div>
-                    <div class="cmar">
-                        <div class="cimg3">
-                            
-                        </div>
-                        <h3>Cabo frio</h3>
-                        <div class="ccont">    
-                            <p>Destino</p>
-                            <p>Preço</p>
-                            <div class="valor">
-                                <p>R$</p>
-                                <h1>200</h1>
-                            </div>
-                        </div>
-                        <button href="#">teste</button>
-                    </div>
-                    <div class="cmar">
-                        <div class="cimg4">
-                            
-                        </div>
-                        <h3>Búzios</h3>
-                        <div class="ccont">    
-                            <p>Destino</p>
-                            <p>Preço</p>
-                            <div class="valor">
-                                <p>R$</p>
-                                <h1>200</h1>
-                            </div>
-                        </div>
-                        <button href="#">teste</button>
-                    </div>
-                </div>
+                        <div class="p-box">
+                            <div class="p-img maceio"></div>
+                            <div class="p-desc">
+                                <h1>Maceió</h1>
+                                <p>Preço</p>
+                                <div class="flex preco">
+                                    <p>R$</p>
+                                    <h1>200</h1>
+                                </div><!--flex-->
+                            </div><!--p-desc-->
+                            <button>Ver detalhes</button>
+                        </div><!--p-box-->
+                        
+                    </div><!--flex-->
+                </section>
+            </div><!--center-->
 
-            </div>
+            <div class="center">
+                <section id="pacotes">
+                    <div class="flex">
+                        <h1 class="pa-titulo">Veja alguns dos nossos melhores pacotes!</h1>
+                        <div class="pa-box">
+                            <img src="img/pacotes/p1.jpg">
+                            <div class="pa-desc">
+                                <h1>Balneário</h1>
+                                <p class="lorem">Lorem Ipsum is simply dummy text of the printing 
+                                    and typesetting industry. Lorem Ipsumandard dummy text ever</p>
+                                <p>Preço</p>
+                                <div class="flex">
+                                    <p>R$</p>
+                                    <h1>200</h1>
+                                </div><!--flex-->
+                            </div><!--pa-desc-->
+                            <button>Ver datalhes</button>
+                        </div><!--pa-box-->
 
-            <footer>
-                <div class="pagamentos">
-                  <h3>Formas de pagamento</h3>
-                  <div class="pag">
-                      <img src="img/pagamentos/mastercard.png">
-                      <img src="img/pagamentos/visa.png">
-                      <img src="img/pagamentos/elo.png">
-                  </div>
-                </div>
-                <div class="contatos">
-                    <h3>Contatos</h3>
-                    <div class="contact">
-                        <img src="img/email.png">
-                        <p>viajatour@empresa.com</p>
-                    </div>
-                    <div class="tele">    
-                        <img src="img/tell.png">
-                        <p>2324-2525</p>
-                    </div>    
-                </div>
-                <div class="seguro">
-                    <p>Site seguro</p>
-                    <img src="img/seguro.png">
-                </div>
-            </footer>
-            
-            <div class="fale">
-                <div class="fl" href="#">
-                </div>
-                <input type="submit" value="Fale conosco" href="">
-            </div>
-        </div>
+                        <div class="pa-box">
+                            <img src="img/pacotes/p2.jpg">
+                            <div class="pa-desc">
+                                <h1>Niagara</h1>
+                                <p class="lorem">Lorem Ipsum is simply dummy text of the printing 
+                                    and typesetting industry. Lorem Ipsumandard dummy text ever</p>
+                                <p>Preço</p>
+                                <div class="flex">
+                                    <p>R$</p>
+                                    <h1>200</h1>
+                                </div><!--flex-->
+                            </div><!--pa-desc-->
+                            <button>Ver datalhes</button>
+                        </div><!--pa-box-->
+
+                        <div class="pa-box">
+                            <img src="img/pacotes/p3.jpg">
+                            <div class="pa-desc">
+                                <h1>Paris</h1>
+                                <p class="lorem">Lorem Ipsum is simply dummy text of the printing 
+                                    and typesetting industry. Lorem Ipsumandard dummy text ever</p>
+                                <p>Preço</p>
+                                <div class="flex">
+                                    <p>R$</p>
+                                    <h1>200</h1>
+                                </div><!--flex-->
+                            </div><!--pa-desc-->
+                            <button>Ver datalhes</button>
+                        </div><!--pa-box-->
+                    </div><!--flex-->
+                </section>
+            </div><!--center-->
+
+
+
+
+        </main>            
+        <script src="main.js"></script>
     </body>
-
 </html>

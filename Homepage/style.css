@@ -1,814 +1,585 @@
-/*CSS DA PÁGINA*/
-
-/* NAVBAR */
-
-*  {
-    margin:0;
-    padding:0;
-    font-family: Arial, Helvetica, sans-serif;
-    
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 
-html, body {
-    height:100%;
-    width:100%;
-    background-color: #CECEF6;
+:root{
+  --pricipal-color: #084B8A;
 }
 
-header{
-    height: 160px;
-    position: relative;
+.center{
+  width: 100%;
+  max-width: 1400px;
+  padding: 0 2%;
+  margin: 0 auto;
 }
 
-.logo img{
-    width: 140px;
-    margin-top: -20px;
-    margin-bottom: -20px;
+.flex{
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.home{
-    background-color: #084B8A;
-    height: 60px;
-    margin-top: -10px;
+html,body{
+  width: 100%;
+  height: 100%;
+  background: #cecef6;
 }
 
-.home li{
-    margin: 20px 20px;
-    font-weight: bold;
-    list-style-type: none;
-}
-.home a{ 
-    text-decoration: none;
-    color: #BDBDBD;
-    font-size: 14px;
-    transition-duration: 0.3s;
+main#main{
+  width: 100%;
+  height: 100%;
 }
 
-.menu{
-    display: flex;
-    margin-left: 20px;
+header .logo a{
+  display: block;
+  height: 100px;
 }
 
-.area{
-    transition-duration: 0.4s;
-    display: flex;
-    margin-left: 130px;
+header .center a img{
+  width: 140px;
+  position: relative;
+  top: -20px;
 }
 
-.area a{
-    text-decoration: underline;
-    margin-right: 30px;
+header .center:nth-child(1){
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.area .butto{
-    width: 90px;
-    height: 40px;
-    margin-top: 10px;
-    background-color: white;
-    transition-duration: 0.9s;
-    color: #084B8A;
-    border-radius: 29px;
-    border: 2px solid white;
-    font-weight: bold;
-    cursor: pointer;
-    outline: none;
+/* Nav Desktop */
+
+header #nav-desktop{
+  background-color: var(--pricipal-color);
+  padding: 20px;
+  position: relative;
+  top: -5px;
 }
 
-.butto:hover{
-    border: 2px solid white;
-    background-color: #084B8A;
-    color: white;
-    font-weight: bold;
-    transition-duration: 0.6s;
+header #nav-desktop ul{
+  list-style: none;
+  display: flex;
 }
 
-.home a:hover{    
-    color: white;  
-    transition-duration: 0.3s;
+header #nav-desktop ul li{
+  padding: 0 30px;
 }
 
-/* SIMULADOR */
+header #nav-desktop ul li a{
+  color: #cfcdcd;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+header #nav-desktop ul li a:hover{
+  color: #fff;
+}
+
+header #nav-desktop ul:nth-of-type(2) li:nth-of-type(1) a{
+  text-decoration: underline;
+}
+
+header #nav-desktop ul:nth-of-type(2) li:nth-of-type(2){
+  padding: 0 10px;
+}
+
+header #nav-desktop ul:nth-of-type(2) li:nth-of-type(2) a{
+  padding: 10px 15px;
+  background-color: white;
+  color: var(--pricipal-color);
+  font-weight: bold;
+  border-radius: 10px;
+  border: 2px solid white;
+  transition: color .5s, background .5s;
+}
+
+header #nav-desktop ul:nth-of-type(2) li:nth-of-type(2) a:hover{
+  background-color: transparent;
+  color: white;
+}
+
+/* Nav mobile */
+
+header #nav-mobile{
+  display: none;
+  position: relative;
+  top: -10px;
+}
+
+header #nav-mobile i{
+  position: absolute;
+  right: 20px;
+  top: -50px;
+  font-size: 30px;
+  color: var(--pricipal-color);
+  cursor: pointer;
+}
+
+header #nav-mobile ul{
+  width: 100%;
+  height: 0;
+  opacity: 1;
+  overflow: hidden;
+  transition: height .5s linear;
+  position: absolute;
+}
+
+header #nav-mobile ul.n-nav{
+  height: 280px;
+}
+
+header #nav-mobile ul li{
+  width: 100%;
+  text-align: center;
+  background-color: var(--pricipal-color);
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  transition: background-color .4s;
+}
+
+header #nav-mobile ul li:hover,
+header #nav-mobile ul li:nth-child(6):hover{
+  background-color: transparent;
+}
+
+header #nav-mobile ul li:nth-child(6){
+  background-color: #2269ac;
+}
+
+header #nav-mobile ul li a{
+  color: white;
+  text-decoration: none;
+  width: 100%;
+  display: block;
+  transition: color .4s;
+  padding: 12px 0;
+}
+
+header #nav-mobile ul li a:hover{
+  color: var(--pricipal-color);
+}
+
+/* Simulador */
+
+#simulador{
+  max-width: 1000px;
+  margin: 40px auto;
+  background: url('img/banner.jpg') no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 20px;
+  border-radius: 25px;
+}
+
+#simulador h1{
+  color: white;
+  font-size: 40px;
+}
 
 #simulador form{
-    border-radius: 25px;
-    background-image: url(img/banner.jpg);
-    background-size: 1120px 190px;
-    width: 1100px;
-    height: 180px ;
-    margin: 0px auto ; 
-    margin-top: 40px;
-    box-shadow: 10px 10px -10px rgba(1, 1,0,0.9);
-    padding-top: 10px;
-    display: flex;
-    color: white;
-    font-weight: bold;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-top: 30px;
+  width: 100%;
 }
 
-.titulo {
-    margin-top: 5px;
-    margin-left: 15px;
-    color: white;
-    position: absolute;
+#simulador form .w50,
+#simulador form .date,
+#simulador form .pessoas{
+  display: flex;
+  flex-direction: column;
+  padding: 20px 10px;
 }
 
-#tama{
-    margin-top: 5px;
-    width: 190px;
-    height: 45px;
-    border-radius: 11px;
-    border: 0;
-    outline: none;
-    padding: 0px 15px;
-    border: 3px solid #084B8A;
+#simulador form .w50{
+  width: 22%;
 }
 
-#origem{
-    margin-top: 85px;
-    margin-left: 20px;
+#simulador form .w50 label,
+#simulador form .date label,
+#simulador form .pessoas label{
+  margin-bottom: 5px;
+  font-weight: bold;
 }
 
-#destino{
-    margin-top: 85px;
-    margin-left: 20px; 
+#simulador form .w50 input,
+#simulador form .pessoas input{
+  padding: 15px 10px;
+  border-radius: 10px;
+  border: 3px solid #084B8A;
+  outline: none;
+  font-size: 14px;
 }
 
-#data{
-    margin-top: 85px;
-    margin-left: 70px;
-    margin-right: 20px;
+#simulador form .date{
+  margin-left: 50px;
+  width: 20%;
 }
 
-#data input{
-    margin-top: 5px;
-    width: 150px;
-    height: 45px;
-    border-radius: 11px;
-    border: 0;
-    outline: none;
+#simulador form .date input{
+  padding: 11px;
+  width: 100%;
+  border-radius: 10px;
+  border: 3px solid #084B8A;
+  outline: none;
+  background:white url('img/calendar.png') no-repeat 90%;
+  font-size: 14px;
 }
 
-#data input[type=date]{
-    text-align: center;
-    background: white url(img/calendar.png) 94% 50% no-repeat;
-    font-size: 15px;
-    border: 2px solid #084B8A;
+#simulador form .date input::-webkit-calendar-picker-indicator{
+  width: 22px;
+  height: 22px;
+  opacity: 0;
 }
 
-#data input::-webkit-inner-spin-button {
-    display: none;
+#simulador form .pessoas input::-webkit-inner-spin-button{
+  height: 40px;
 }
 
-#data input::-webkit-calendar-picker-indicator{
-    width: 22px;
-    height: 22px;
-    opacity: 0;
+#simulador form .procurar{
+  margin-left: 35px;
+  width: 17%;
 }
 
-#pessoas{
-    margin-top: 85px;
+#simulador form .procurar button{
+  padding: 18px 15px;
+  border-radius: 10px;
+  border: none;
+  background: var(--pricipal-color);
+  color: white;
+  cursor: pointer;
+  outline: none;
+  transition: background .5s,color .5s;
+  font-weight: bold;
+  position: relative;
+  top: 13px;
+  font-size: 14px;
 }
 
-#pessoas input{
-    margin-top: 5px;
-    padding: 0px 20px;
-    width: 40px;
-    height: 45px;
-    border-radius: 10px;
-    border: 2px solid #084B8A; 
-    outline: none;
+#simulador form .procurar button:hover{
+  background: white;
+  color: var(--pricipal-color);
 }
 
-#pessoas input::-webkit-inner-spin-button {
-    height: 40px;
-    color: #084B8A;
-}
-
-#botao{
-    margin-top: 110px;
-    margin-left: 95px;
-}
-
-#botao input{
-    width: 150px;
-    height: 50px;
-    border-radius: 10px;
-    border: 0;
-    outline: none;
-    font-weight: bold;
-    background-color: #084B8A;
-    border: 5px solid #084B8A;
-    color: white;
-}
-
-#botao input:hover{
-    transition-duration: 0.5s;
-    background-color: white;
-    border: 5px solid white;
-    color: black;
-}
-          
-/*------------------ 
---Area de conteudo -
---------------------
-*/
-
-.margin{
-    margin: 40px 10px;
-}
-
-/* PASSAGENS */
+/* Passagens */
 
 #passagens{
-    height: 420px;
-    display: flex;
-    background-color: royalblue;
-    border-radius: 30px 0px 30px 0px;
+  width: 100%;
+  padding: 30px;
+  background-color: royalblue;
+  border-radius: 20px 0px 20px 0px;
 }
 
-.pelement{
-    width: 260px;
-    height: 350px;
-    margin: 23px;
-    border-radius: 15px;
-    background-color: white;
-    border: 2px solid white;
+#passagens .flex{
+  width: 100%;
+  justify-content: space-between;
 }
 
-.pelement:hover{
-    box-shadow: 0px 0px 5px 5px rgba(1, 1,0,0.1);
+#passagens .flex .p-box{
+  width: 22%;
+  background: white;
+  border: 1px solid white;
 }
 
-.imgss{
-    border-radius: 15px 15px 0px 0px;
-    background: url(img/passagens/p1.jpeg) no-repeat;
-    background-size: 270px;
-    width: 260px;
-    height: 180px;
-    background-position: center;
-    transition-duration: 0.9s;
-    opacity: 0.8;
+#passagens .flex .p-box .p-img{
+  width: 100%;
+  height: 200px;
+  opacity: .8;
+  transition: all 1s;
 }
 
-.imgss1{
-    border-radius: 15px 15px 0px 0px;
-    background: url(img/passagens/p2.jpeg) no-repeat;
-    background-size: 305px;
-    width: 260px;
-    height: 180px;
-    background-position: center;
-    transition-duration: 0.9s;
-    opacity: 0.8;
+#passagens .flex .p-box .dubai{
+  background: url('img/passagens/p1.jpeg') no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
 }
 
-.imgss2{
-    border-radius: 15px 15px 0px 0px;
-    background: url(img/passagens/p3.jpeg) no-repeat;
-    background-size: 270px;
-    width: 260px;
-    height: 180px;
-    background-position: center;
-    transition-duration: 0.9s;
-    opacity: 0.8;
+#passagens .flex .p-box .nova{
+  background: url('img/passagens/p2.jpeg') no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
 }
 
-.imgss3{
-    border-radius: 15px 15px 0px 0px;
-    background: url(img/passagens/p3.jpeg) no-repeat;
-    background-size: 270px;
-    width: 260px;
-    height: 180px;
-    background-position: center;
-    transition-duration: 0.9s;
-    opacity: 0.8;
+#passagens .flex .p-box .salvador{
+  background: url('img/passagens/p3.jpeg') no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
 }
 
-.pelement:hover .imgss{
-    background-size: 300px;
-    transition-duration: 0.9s;
-    opacity: 1;
+#passagens .flex .p-box .maceio{
+  background: url('img/passagens/p3.jpeg') no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
 }
 
-.pelement:hover .imgss1{
-    background-size: 350px;
-    transition-duration: 0.9s;
-    opacity: 1;
+#passagens .flex .p-box:hover{
+  box-shadow: 0px 0px 16px -2px rgba(0,0,0,0.63);
 }
 
-.pelement:hover .imgss2{
-    background-size: 300px;
-    transition-duration: 0.9s;
-    opacity: 1;
+#passagens .flex .p-box:hover .p-img{
+  background-size: 120% 120%;
+  opacity: 1;
 }
 
-.pelement:hover .imgss3{
-    background-size: 300px;
-    transition-duration: 0.9s;
-    opacity: 1;
+#passagens .flex .p-box .p-desc{
+  padding: 10px;
 }
 
-.titus{
-    margin: 10px 15px;
-    font-size: 20px;
-    font-weight: bold;
+#passagens .flex .p-box .p-desc h1{
+  font-size: 23px;
 }
 
-.pelement p{
-    margin-left: 10px;    
+#passagens .flex .p-box .p-desc p{
+  padding: 3px 0;
 }
 
-.cont{
-    margin-top: 5px;
-    display: flex;
+#passagens .flex .p-box .p-desc .flex{
+  justify-content: initial;
 }
 
-.cont h4{
-    font-size: 30px;
-    margin-left: 10px;
+#passagens .flex .p-box .p-desc .flex h1{
+  padding-left: 5px;
+  font-size: 30px;
 }
 
-.pelement button{
-    width: 100px;
-    height: 30px;
-    margin: 15px 75px;
-    border-radius: 5px;
-    color: white;
-    background-color: black;
-    opacity: 0.7;
-    border: 2px solid black;
-    cursor: pointer;
+#passagens .flex .p-box button{
+  padding: 8px 10px;
+  border: none;
+  background-color: rgba(0,0,0,.7);
+  border-radius: 5px;
+  color: white;
+  margin: 10px auto;
+  display: block;
+  cursor: pointer;
+  transition: background-color .5s;
 }
 
-.pelement button:hover{
-    opacity: 0.8;
+#passagens .flex .p-box button:hover{
+  background-color: black;
 }
 
-
-/* EDITAR O CSS DA AREA DE PACOTES NESTE LOCAL */
+/* Pacotes */
 
 #pacotes{
-    height: 420px;
-    display: flex;
-    background-image: url("https://cdn.pixabay.com/photo/2016/08/11/23/48/italy-1587287_960_720.jpg");
-    background-size: 1300px 900px;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    border-radius: 30px 0px 30px 0px;
+  width: 100%;
+  border-radius: 20px 0px 20px 0px;
+  margin: 30px 0;
+  background: url('https://cdn.pixabay.com/photo/2016/08/11/23/48/italy-1587287_960_720.jpg') no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  padding: 20px;
+  height: 460px;
 }
 
-#pacotes h1{
-    font-size: 60px;
-    color: white;
-    margin: 30px 25px;
-    text-shadow: 2px 5px 5px black;
+#pacotes .flex{ 
+  width: 100%;
+  justify-content: space-between;
 }
 
-.element{
-    width: 400px;
-    height: 290px;
-    background-color: white;
-    margin: 20px 20px;
-    transition-duration: 0.6s;
+#pacotes .flex h1{ 
+  width: 26%;
+  color: white;
+  font-size: 60px;
+  text-shadow: 2px 2px 2px black;
 }
 
-.imgs2{ 
-    width: 250px;
-    height: 150px;
+#pacotes .flex .pa-box{
+  width: 22%;
+  height: 340px;
+  background-color: white;
+  transition: height .5s;
 }
 
-.titu{
-    margin: 5px 10px 4px 10px;
-    font-size: 20px;
-    font-weight: bold;
+#pacotes .flex .pa-box:hover{
+  height: 420px;
 }
 
-.element p{
-    margin-left: 10px;
+#pacotes .flex img{
+  width: 100%;
+  height: 160px;
 }
 
-.valor{
-    display: flex;
-    margin-top: 5px;
+#pacotes .flex .pa-desc{
+  padding: 10px;
 }
 
-.valor h4{
-    font-size: 30px;
-    margin-left: 5px;
-    margin-bottom: -7px;
+#pacotes .flex .pa-desc h1{
+  font-size: 25px;
+  text-shadow: none;
+  color: black;
 }
 
-.test2{
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: -80px;
-    opacity: 0;
-    transition-duration: 0.6s;
+#pacotes .lorem{
+  visibility: hidden;
+  height: 0;
+  transition: all .6s;
+  opacity: 0;
 }
 
-.buttons1{
-    margin: 10px 75px;
-    width: 100px;
-    height: 30px;
-    outline: none;
-    cursor: pointer;
+#pacotes .flex .pa-box:hover .lorem{
+  visibility: visible;
+  height: 90px;
+  transition: all .6s;
+  opacity: 1;
+  transition: all .6s;
 }
 
-.buttons1:hover{
-    background-color: black;
-    color: white;
-    opacity: 0.7;
+
+#pacotes .flex .pa-box .pa-desc p{
+  padding: 3px 0;
 }
 
-.element:hover .test2{
-    margin-top: 0;
-    margin-bottom: 5px;
-    opacity: 1;
-    transition-duration: 0.6s;
-    transition-delay: 0.2s;
+#pacotes .flex .pa-box .pa-desc .flex{
+  justify-content: initial;
 }
 
-.element:hover .buttons1{
-    margin: 10px 75px;
-    width: 100px;
-    height: 30px;
-}
-.element:hover{
-    height: 380px;
-    transition-duration: 0.6s;
-    transition-delay: 0.2s;
+#pacotes .flex .pa-box .pa-desc .flex h1{
+  padding-left: 5px;
+  font-size: 30px;
 }
 
-.buttons1:hover{
-    border: 1px solid black;
+#pacotes .flex .pa-box button{
+  padding: 8px 10px;
+  border: none;
+  background-color: rgba(0,0,0,.7);
+  border-radius: 5px;
+  color: white;
+  margin: 10px auto;
+  display: block;
+  cursor: pointer;
+  transition: background-color .5s;
 }
 
-/* EDITAR O CSS DA AREA DE HOTEIS NESTE LOCAL */
-
-#hoteis{
-    height: 250px;
-    display: flex;
-    background-color: royalblue;
-    border-radius: 30px 0px 30px 0px;
+#pacotes .flex .pa-box button:hover{
+  background-color: black;
 }
 
-.element3{
-    width: 390px;
-    height: 190px;
-    background-color: white;
-    border-radius: 10px;
-    display: flex;
-    margin: 20px 12px;
-    transition-duration: 0.5s;
-}
+/* Responsive */
 
-.element3 img{
-    width: 250px;
-    border-radius: 10px 0px 0px 10px;
-    transition-duration: 0.9s;
-}
+@media screen and (max-width: 1011px){
+  #simulador{
+    max-width: 800px;
+  }
 
-.element3:hover img{
-    width: 200px;
-    transition-duration: 0.9s;
-}
+  #simulador form .w50{
+    width: 50%;
+    padding: 0 10px;
+  }
 
-.element3 h3{
-    margin: 20px 5px;
-}
+  #simulador form .date{
+    width: 30%;
+    margin: 0;
+  }
 
-.desc{
-    margin-left: 10px;
-}   
-
-.desc button{
-    width: 100px;
-    height: 30px;
-    margin: 30px 10px;
-    transition-duration: 0.9s;
-    color: white;
-    background-color: black;
-    opacity: 0.6;
-    border: 2px  solid black;
-    outline: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.desc button:hover{
-    opacity: 0.8;
-    transition: none;
-}
-
-.element3:hover button{
-    margin-left: 35px;
-    transition-duration: 0.9s;
-}
-
-.de{
-    font-weight: bold;
-}
-
-.desc2{
-    margin: 4px 4px 4px -60px;
-    opacity: 0;
-    width: 70px;
-    transition-duration: 0.7s;
-}
-
-.element3:hover .desc2{
-    width: 70px;
-    margin-left: -45px;
-    opacity: 1;
-    transition-duration: 0.9s;
-    transition-delay: 0.2s;
-}
-
-/* EDITAR O CSS DA AREA DE CRUZEIROS NESTE LOCAL */
-
-#cruzeiros{
-    height: 450px;
-    display: flex;
-    border-radius: 30px 0px 30px 0px;
-    background-color: royalblue;
-}
-
-.cmar{
-    background-color: white;
-    width: 280px;
-    height: 370px;
-    margin: 40px 15px;
-    border: 1px solid black;
-}
-
-.cmar:hover{
-    box-shadow: 0px 0px 3px 3px rgba(12, 12, 8, 0.3);
-}
-
-.cimg1{
-    background: url(img/cruzeiros/c1.jpeg) no-repeat;
-    background-size: 280px;
-    width: 280px;
-    height: 180px;
-    background-position: center;
-    transition-duration: 0.9s;
-}
-
-.cimg2{
-    background: url(img/cruzeiros/c2.jpeg) no-repeat;
-    background-size: 280px;
-    width: 280px;
-    height: 180px;
-    background-position: center;
-    transition-duration: 0.9s;
-}
-
-.cimg3{
-    background: url(img/cruzeiros/c3.jpeg) no-repeat;
-    background-size: 325px;
-    width: 280px;
-    height: 180px;
-    background-position: center;
-    transition-duration: 0.9s;
-}
-
-.cimg4{
-    background: url(img/cruzeiros/c4.jpeg) no-repeat;
-    background-size: 295px;
-    width: 280px;
-    height: 180px;
-    background-position: center;
-    transition-duration: 0.9s;
-}
-
-.cmar:hover .cimg1{
-    background-size: 320px;
-    transition-duration: 0.9s;
-}
-
-.cmar:hover .cimg2{
-    background-size: 320px;
-    transition-duration: 0.9s;
-}
-
-.cmar:hover .cimg3{
-    background-size: 390px;
-    transition-duration: 0.9s;
-}
-
-.cmar:hover .cimg4{
-    background-size: 350px;
-    transition-duration: 0.9s;
-}
-
-.cmar h3{
-    margin: 10px 20px;
-}
-
-.ccont{
-    margin: 10px 20px;
-}
-
-.valor h1{
-    margin-left: 10px;
-}
-
-#cruzeiros button{
-    width: 100px;
-    height: 40px;
-    margin: 0px 90px;
-    border-radius: 5px;
-    color: white;
-    background-color: black;
-    opacity: 0.7;
-    border: 2px solid black;
-    cursor: pointer;
-}
-
-#cruzeiros button:hover{
-    opacity: 0.8;
-}
-
-/* EDITAR O CSS DA AREA DE CARROS NESTE LOCAL */
-
-.anun{
-    text-decoration: none;
-}
-
-#carros{
-    height: 250px;
-    display: flex;
-    background-color: #9F81F7;
-    border-radius: 30px;
-    cursor: pointer;
-    box-shadow: 0px 0px 5px 5px rgba(1, 1,0,0.1);
-}
-
-#carros h1{
-    margin: 25px 20px;
-    color: white;
-    text-shadow: 2px 2px 2px black;
-}
-
-.caelement{
-    width: 280px;
-    height: 200px;
-    background-color: black;
-    margin: 20px 20px;
-    border-radius: 20px;
-    opacity: 0.9;
-}
-
-.caelement:hover{
-    box-shadow: 0px 0px 5px 5px rgba(1, 1,0,0.1);
-}
-
-.cimgss1 img{
-    width: 252px;
-    height: 150px;
-    border-radius: 20px 20px 0px 0px;
-}
-
-.cimgss2 img{
-    width: 250px;
-    height: 150px;
-    border-radius: 20px 20px 0px 0px;
-}
-
-.cimgss3 img{
-    width: 252px;
-    height: 150px;
-    border-radius: 20px 20px 0px 0px;
-}
-
-.caelement p{
-    text-align: center;
-    color: white;
-}
-
-/* FOOTER */
-
-footer{
+  #simulador form .date input{
+    min-width: 170px;
     width: 100%;
-    height: 220px;
-    background-color: #084B8A;
-    position: relative;
-    bottom: 0px;
-    display: flex;
+  }
+
+  #simulador form .pessoas{
+    width: 15%;
+    margin-left: 4%;
+  }
+
+  #simulador form .procurar{
+    width: 30%;
+    margin-left: 10%;
+  }
+
+  #pacotes .flex .pa-titulo{ 
+    width: 100%;
+    font-size: 40px;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  #pacotes .flex .pa-box{
+    width: 30%;
+  }
 }
 
-footer div{
-margin: 50px 90px ;
-color: white;
-}
+@media screen and (max-width: 900px) {
+  header .logo a{
+    margin: 0 auto;
+  }
 
-.pagamentos h3{
-width: 220px;
-text-align: center;
-}
+  header .logo a img{
+    width: 120px;
+  }
+  
+  header #nav-desktop{
+    display: none;
+  }
 
-.pag{
-display: flex;
-margin-top: 10px;
-margin-left: 20px;
-}
+  header #nav-mobile{
+    display: block;
+  }
 
-.pag img{
-margin: 10px;
-width: 40px;
-}
+  #simulador h1{
+    font-size: 35px;
+  }
 
-.contatos h3{
-text-align: center;
-margin-bottom: 15px;
-}
-
-.contact{
-display: flex;
-width: 15px;
-margin-top: 20px;
-margin-left: 10px;
-margin-bottom: 0px;
-}
-
-.contact img{
-width: 15px;
-margin-right: 7px;
-}
-
-.tele{
-display: flex;
-height: 15px;
-margin-top: 10px;
-margin-left: 10px;
+  #passagens .flex .p-box{
+    width: 40%;
+    margin: 5%;
+  }
 
 }
 
-.tele img{
-width: 15px;
-margin-top: 3px;
-margin-right: 5px;
+@media screen and (max-width: 693px) {
+  #simulador h1{
+    font-size: 30px;
+  }
+  
+  #simulador form .pessoas{
+    width: 18%;
+    margin-left: 50px;
+  }
+
+  #simulador form .procurar{
+    width: 40%;
+    margin: 0;
+  }
+
+  #passagens .flex .p-box{
+    width: 60%;
+    margin: 30px auto;
+  }
 }
 
-.seguro{
-display: flex;
-height: 20px;
-margin: 0px;
-position: absolute;
-right: 10px;
-bottom: 20px;
-}
+@media screen and (max-width: 500px) {
+  #simulador h1{
+    font-size: 25px;
+    text-align: center;
+  }
+  
+  #simulador form .w50{
+    width: 100%;
+    padding: 10px;
+  }
 
-.seguro p{
-margin-right: 5px;
-}
+  #simulador form .date{
+    width: 70%;
+  }
 
-.seguro img{
-width: 20px;
-height: 20px;
-}
+  #simulador form .pessoas{
+    width: 27%;
+    margin-left: 3%;
+  }
 
-/* Fale conosco */
+  #simulador form .procurar{
+    width: 100%;
+    margin: 0;
+    padding-bottom: 10px;
+  }
 
-.fale{
-    position: fixed;
-    bottom: 37px;
-    right: 20px;
-    display: flex;
-    margin-right: -100px;
-    transition-duration: 0.9s;
-}
-
-.fl{
-    width: 40px;
-    height: 40px;
-    border-radius: 45%;
-    background: white url(img/faleconosco.png) 50% 50% no-repeat;
-    background-size: 40px;
-    cursor: pointer;
-}
-
-.fale:hover{
-    margin-right: 0;
-    transition-duration: 0.9s;
-}
-
-.fale:hover input{
-    opacity: 1;
-    transition-duration: 0.3s;
-}
-
-.fale:hover .fl{
-    width: 43px;
-    border-radius: 20px 0px 0px 20px;
-    transition-duration: 0.3s;
-}
-
-.fale input{
-    width: 100px;
-    height: 40px;
-    border-radius: 0px 20px 20px 0px;
-    border: 2px solid white;
-    background-color: white;
-    opacity: 0;
-    outline: none;
-    cursor: pointer;
+  #passagens .flex .p-box{
+    width: 90%;
+    margin: 30px auto;
+  }
 }
