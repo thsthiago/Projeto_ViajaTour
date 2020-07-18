@@ -1053,3 +1053,41 @@ footer .flex .seguro img{
     margin: 30px  auto;
   }
 }
+
+@media screen and (max-width: 400px){   
+  #hoteis .flex .ho-box{
+    height: auto;
+  }
+
+  #hoteis .flex .ho-box .flex{
+    flex-wrap: wrap;
+    height: auto;
+  }
+  
+  #hoteis .flex .ho-box img{
+    width: 100%;
+    height: 200px;
+    border-radius: 10px 10px 0px 0px;
+  }
+  
+  #hoteis .flex .ho-box:hover img{
+    width: 100%;
+  }
+
+  #hoteis .flex .ho-box .flex-desc{
+    width: 100%;
+  }
+  
+  #hoteis .flex .ho-box .ho-desc{
+    position: relative;
+    right: 50px;
+  }
+  
+  #hoteis .flex .ho-box:hover .ho-desc2{
+    display: none;
+  }
+  
+  #hoteis .flex .ho-box:hover button{
+    right: 15px;
+  }
+}
