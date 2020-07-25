@@ -107,6 +107,7 @@ header #nav-mobile{
   display: none;
   position: relative;
   top: -10px;
+  z-index: 2;
 }
 
 header #nav-mobile i{
@@ -128,7 +129,7 @@ header #nav-mobile ul{
 }
 
 header #nav-mobile ul.n-nav{
-  height: 280px;
+  height: 320px;
 }
 
 header #nav-mobile ul li{
@@ -141,11 +142,11 @@ header #nav-mobile ul li{
 }
 
 header #nav-mobile ul li:hover,
-header #nav-mobile ul li:nth-child(6):hover{
+header #nav-mobile ul .login{
   background-color: white;
 }
 
-header #nav-mobile ul li:nth-child(6){
+header #nav-mobile ul .login{
   background-color: #2269ac;
 }
 
@@ -160,6 +161,10 @@ header #nav-mobile ul li a{
 
 header #nav-mobile ul li a:hover{
   color: var(--pricipal-color);
+}
+
+.nav-fale-conosco{
+  display: none;
 }
 
 /* Simulador */
@@ -759,8 +764,9 @@ footer .flex .seguro img{
   opacity: 0;
   border-radius: 15px 15px 30px 15px;
   box-shadow: 42px 22px 150px -20px rgba(0,0,0,0.44);
-  transition: visibility 1.5s, width 1.5s, height 1.5s, opacity 1.5s;
+  transition: visibility 1.5s, width 0.8s, height 1s, opacity 1.5s;
 }
+
 .fale-conosco form{
   opacity: 0;
   transition: opacity 2s ease-out;
@@ -1071,6 +1077,10 @@ footer .flex .seguro img{
 }
 
 @media screen and (max-width: 500px) {
+  .nav-fale-conosco{
+    display: block;
+  }
+  
   #simulador h1{
     font-size: 25px;
     text-align: center;
@@ -1127,6 +1137,14 @@ footer .flex .seguro img{
   #cruzeiro .flex .cru-box{
     width: 80%;
     margin: 30px  auto;
+  }
+
+  .fale-conosco{
+    display: none;
+  }
+
+  .img-fale-conosco{
+    display: none;
   }
 }
 
